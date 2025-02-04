@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+     
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>E-GARAGE PORTAL</title>
+    <link rel="icon" type="image/x-icon" href="static/logo_new.jpg" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nanum+Brush+Script&family=Open+Sans:wght@600&family=Poppins:wght@200;400;500;600;700;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nanum+Brush+Script&family=Open+Sans:wght@600&family=Poppins:wght@200;400;500;600;700;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            padding-top: 70px;
+            background-color:#f5f8fc;
+        }
+        .home-logo4 {
+          position: fixed;
+          display: flex;
+          height: 60px;
+          width: 60px;
+          z-index: 10;
+          bottom: 5px;
+          right: 5px;
+        }
+        a{
+            color: wheat;
+            text-decoration: none;
+        }
+        .card {
+            margin-bottom: 20px;
+            border: none;
+        }
+
+        .card-title {
+            font-size: 20px;
+        }
+
+        
+        #clock {
+            font-size: 17px;
+            right: 0;
+            position: absolute;
+            width: 90px;
+            color: red;
+            text-align: right;
+            z-index:3;
+        }
+        .button-container {
+          position: relative;
+          
+        }
+        .mes {
+          background-color: #007bff; /* Bright blue color */
+          color: white; /* Text color */
+          padding: 10px 20px; /* Padding */
+          font-size: 16px; /* Font size */
+          border: none; /* Remove border */
+          border-radius: 5px; /* Rounded corners */
+          position: absolute; /* Absolute position */
+          bottom: 20px; /* Distance from the bottom */
+          right: 20px; /* Distance from the right */
+          cursor: pointer; /* Cursor style */
+        }
+      
+        /* Hover effect */
+        .mes:hover {
+          background-color: #0056b3; 
+          color:black;/* Darker blue color */
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            text-decoration: none;
+            z-index: 5;
+            padding-top: 3px;
+            overflow: hidden;
+            background-color: rgba(62, 62, 189, 0.78);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 64px;
+        }
+
+        li {
+            display: inline-flex;
+            float: right;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px 18px;
+            text-decoration: none;
+        }
+
+        li a.name:hover {
+            font-size: 150%;
+            text-decoration: none;
+        }
+
+        li a.ex2:hover,
+        a.ex2:active {
+            font-size: 110%;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: rgb(128, 0, 247);
+            text-decoration: none;
+        }
+
+        .name {
+            color: white;
+            top: 10px;
+            left: 10 px;
+            position: absolute;
+            text-decoration:none;
+            font-size: 25px;
+        }
+
+    .logo{
+        height: 50px;
+        width: 50px;
+        overflow: hidden;
+        position: relative;
+        right: 50px;
+    }
+    .row1{
+        margin-top:20px;
+      }
+    .row{
+        display: flex;
+        flex-wrap:wrap;
+        margin-right:-7.5px;
+        margon-left: -7.5px;
+      }
+      .col-md-6,.col-sm-12{
+        position: relative;
+        width: 100%;
+        padding-right:7.5px;
+        padding-left:7.5px;
+        border: 1px;
+      }
+      .edit {
+        position: relative;
+        border:0px;
+        background-color:#d5d9db;
+        border-radius:5px;
+        height:30px;
+        width:130px;
+        top: -35px; /* Adjust this value to move the button up */
+        left: 75%; /* Adjust this value to move the button to the right */
+      }
+      .edit:hover{
+        background-color: #4b3dd1;
+        font-size:110%;
+        border:0px;
+      }
+    </style>
+    </head>
+  <ul>
+    <a href="dashboard_client"><img src="/static/logo_new.jpg/" class="logo" alt="LOGO"></a>
+    <div class="name"><a href="dashboard_client">E-GARAGE</a></div>
+    <li><a href="{{ url_for('login')}}" class="ex2">Log Out</a></li>
+    <li><div class="name1" >{{full_name}}</div></li>
+
+
+</ul>
+<div id="clock">8:10:45</div>
+          
+<div class="row1">
+    <section class="col-lg-12 connectedSortable">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">
+            <i class='bx bx-bot'></i>
+            Users List
+          </h3>
+        </div>
+                <div class="row">
+                  <div class="card-body">
+                    <label><b> Entries</b></label>
+                    <br>
+                    <table id="example2" class="table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>User ID</th>
+                          <th>Last Service</th>
+                          <th>Year of purchasing</th>
+                          <th>Car Model</th>
+                          <th>KM Driven</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for detail_users in detail_user %}
+                        <tr>
+                          <td>{{ detail_users[0] }}</td> <!-- Assuming this is Robot ID -->
+                          <td>{{ detail_users[19] }}</td>
+                          <td>{{ detail_users[2] }}</td> 
+                          <td>{{ detail_users[1] }}</td>
+                          <td>{{ detail_users[3] }}</td> <!-- Adjust accordingly based on the data structure -->
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                </section>
+              </div>            
+              <div class="row1">
+                <section class="col-lg-12 connectedSortable">
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">
+                        <i class='bx bxs-cog'></i>
+                        Service Stations
+                      </h3>
+                    </div>
+                    <div class="row">
+                    <div class="card-body">
+                      <label><b> Entries</b></label><br>
+                      
+                      <table id="example2" class="table table-bordered table-striped">
+                        <thead>
+                           
+                          <tr>
+                            <th>Service Station</th>
+                            <th>Address</th>
+                            <th>Email ID</th>
+                            
+                          </tr>
+                          
+                        </thead>
+                        <tbody>
+                            {% for detail_users1 in detail_user2 %}
+                          <tr>
+                            <td>{{ detail_users1[1] }}</td>
+                            <td>{{ detail_users1[2] }}</td>
+                            <td>{{ detail_users1[3] }}</td>
+    
+                          </tr>
+                          {% endfor %}
+                        </tbody>
+                      </table>
+                      
+                    </div>
+                    </div>
+                     
+                  </div>   
+        </div>
+
+        <div class="button-container">
+          <!-- Button -->
+          <button class="mes"><a href="{{ url_for('assign')}}">Assign</a></button>
+        </div>
+           <a href="{{ url_for('enterprise') }}"
+      ><img alt="image" src="static/logo_new.jpg" class="home-logo4"
+    /></a>
+          <script>
+            // Calling showTime function at every second
+            setInterval(showTime, 1000);
+      
+            // Defining showTime funcion
+            function showTime() {
+              // Getting current time and date
+              let time = new Date();
+              let hour = time.getHours();
+              let min = time.getMinutes();
+              let sec = time.getSeconds();
+              am_pm = "AM";
+      
+              // Setting time for 12 Hrs format
+              if (hour >= 12) {
+                if (hour > 12) hour -= 12;
+                am_pm = "PM";
+              } else if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+              }
+      
+              hour = hour < 10 ? "0" + hour : hour;
+              min = min < 10 ? "0" + min : min;
+              sec = sec < 10 ? "0" + sec : sec;
+      
+              let currentTime = hour + ":" + min + ":" + sec + am_pm;
+      
+              // Displaying the time
+              document.getElementById("clock").innerHTML = currentTime;
+            }
+      
+            showTime();
+          </script>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+          <script>
+            $(document).ready(function() {
+              // Initialize DataTable
+              var table = $('#example2').DataTable();
+            
+              // Handle search input
+              $('#searchInput').on('keyup', function() {
+                table.search($(this).val()).draw();
+              });
+            });
+          </script>
+
+  
+        </body>
+
+</html>

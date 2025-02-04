@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>E-GARAGE PORTAL</title>
+    <meta property="og:title" content="Agency modern template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/x-icon" href="static/logo_new.jpg" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 150vh;
+      background: url(static/login.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .wrapper {
+      width: 420px;
+      background: transparent;
+      border: 2px solid rgda(255, 255, 255, 0.2);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 0 10px rgda(0, 0, 0, 0.2);
+      color: #fff;
+      border-radius: 10px;
+      padding: 30px 40px;
+    }
+
+    .wrapper h1 {
+      font-size: 36px;
+      text-align: center;
+    }
+
+    .wrapper .input-box {
+      width: 100%;
+      height: 50px;
+      margin: 30px 0;
+    }
+
+    .input-box input {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 40px;
+      font-size: 16px;
+      color: #fff;
+      padding: 20px 45px 20px 20px;
+    }
+
+    .input-box input::placeholder {
+      color: #fff;
+    }
+
+    .input-box i {
+      position: absolute;
+      right: 20px;
+      transform: translateY(-50%);
+      font-size: 20px;
+      padding: 45px 30px 0px;
+      color: #fff;
+    }
+
+    .wrapper .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14.5px;
+      margin: -15px 0 15px;
+    }
+
+    .remember-forgot label input {
+      accent-color: #fff;
+      margin-right: 3px;
+    }
+
+    .remember-forgot a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .remember-forgot a :hover {
+      text-decoration: underline;
+    }
+
+    .wrapper .btn {
+      width: 100%;
+      height: 45px;
+      background: #fff;
+      border: none;
+      outline: none;
+      border-radius: 40px;
+      box-shadow: 0 0 10px rgda(0, 0, 0, 0.1);
+      cursor: pointer;
+      font-size: 16px;
+      color: #333;
+      font-weight: 600;
+    }
+    .wrapper .register-link{
+        font-size:14.5px;
+        text-align:center;
+        margin-top:20px;
+
+    }
+    .register-link p a{
+        color: #fff;
+        text-decoration:none;
+        font-weight:600;
+
+    }
+    .register-link p a:hover{
+        text-decoration: underline;
+    }
+    .home-footer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .home-information {
+      gap: var(--dl-space-space-twounits);
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: var(--dl-space-space-fiveunits);
+      padding-left: 60px;
+      padding-right: var(--dl-space-space-unit);
+      flex-direction: column;
+      padding-bottom: var(--dl-space-space-fiveunits);
+    }
+    .home-logo4 {
+      position: fixed;
+      display: flex;
+      height: 60px;
+      width: 60px;
+      z-index: 10;
+      bottom: 5px;
+      right: 5px;
+    }
+    .home-details {
+      gap: var(--dl-space-space-twounits);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .home-header3 {
+      gap: var(--dl-space-space-threeunits);
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .home-branding2 {
+      gap: var(--dl-space-space-halfunit);
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .home-company2 {
+      color: rgb(21, 21, 21);
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .home-location {
+      gap: var(--dl-space-space-halfunit);
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .home-caption {
+      color: #151515;
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    .home-value {
+      color: rgb(21, 21, 21);
+      font-size: 32px;
+      max-width: 560px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 48px;
+    }
+
+    .eror-message {
+      color: red;
+    }
+  </style>
+
+  <body>
+    <link rel="stylesheet" href="static/mainpagestyle.css" />
+    <div>
+      <link href="static/mainpage.css" rel="stylesheet" />
+    <div class="home-container">
+        <div class="home-navbar">
+          <header data-thq="thq-navbar" class="home-navbar-interactive">
+            <div class="home-branding">
+              <a href="{{ url_for('index') }}"
+                ><img alt="image" src="static/logo_new.jpg" class="home-logo"
+              /></a>
+              <a href="{{ url_for('index') }}"
+                ><span class="home-company">E-Garage</span></a
+              >
+            </div>
+            <div class="home-items">
+              <div class="home-links">
+                <a href="{{ url_for('index') }}">
+                  <span class="nav-link">Home</span></a
+                >
+                <a href="{{ url_for('maintenance') }}"
+                  ><span class="nav-link">Maintenance Prediciton</span></a
+                >
+                <a href="{{ url_for('car_price') }}"
+                  ><span class="nav-link">Price Predicition</span></a
+                >
+                <a href="{{ url_for('error') }}">
+                  <span class="nav-link">Fuel Effeciency Check</span></a
+                >
+                <a href="{{ url_for('login') }}">
+                  <span class="nav-link">Login</span></a
+                >
+              </div>
+            </div>
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <button class="home-button button">
+                <img
+                  alt="image"
+                  src="static/hamburger.svg"
+                  class="home-image"
+                />
+                <span class="home-text03">Start a project</span>
+              </button>
+            </div>
+            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+              <div
+                data-thq="thq-mobile-menu-nav"
+                data-role="Nav"
+                class="home-nav"
+              >
+                <div class="home-top">
+                  <div class="home-branding1">
+                    <img alt="image" src="static/logo.svg" class="home-logo1" />
+                    <span class="home-company1">SPYRL</span>
+                  </div>
+                  <div data-thq="thq-close-menu" class="home-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="home-icon">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="home-items1">
+                  <div class="home-links1">
+                    <span class="nav-link">Work</span>
+                    <span class="nav-link">Services</span>
+                    <span class="nav-link">About</span>
+                    <span class="nav-link">Contact</span>
+                  </div>
+                  <button class="start-button button home-button1">
+                    <span class="home-text08">Start a project</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+    <div class="wrapper">
+      <form action="{{ url_for('login')}}" method="POST">
+        <h1>Login</h1>
+        {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    {% if message %}
+        <p style="color: blue;">{{ message }}</p>
+    {% endif %}
+    
+        <div class="input-box">
+          <input type="text" name="username" placeholder="Email" required />
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+            required
+          />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+        <div class="remember-forgot">
+          <label> <input type="checkbox" id="checkbox" />Show password </label>
+          <label>
+            <a href="{{ url_for('forgot') }}">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="register-link">
+            <p>Don't have an account?<a href="{{ url_for('register') }}">Register</a></p>
+          
+      </form>
+      
+    </div>
+    </div>
+    <a href="{{ url_for('enterprise') }}"
+      ><img alt="image" src="static/logo_new.jpg" class="home-logo4"
+    /></a>
+    <script>
+      let checkbox = document.getElementById("checkbox");
+      let password = document.getElementById("password");
+
+      checkbox.onclick = function () {
+        if (password.type == "password") {
+          password.type = "text";
+        } else {
+          password.type = "password";
+        }
+      };
+    </script>
+  </body>
+</html>

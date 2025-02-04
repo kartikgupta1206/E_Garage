@@ -1,0 +1,252 @@
+Car Make,Car Model,Year,Engine Size (CC),Horsepower (BHP),Weight (Kg),Fuel Type,Transmission,Drive Mode,Predicted Mileage (KPL)
+Maruti Suzuki,Swift,2020,1197,82,855,Petrol,Manual,FWD,21
+Hyundai,Grand i10,2021,1197,81,895,Petrol,Manual,FWD,19
+Tata,Altroz,2020,1199,85,1036,Petrol,Manual,FWD,20
+Honda,Amaze,2019,1199,89,905,Petrol,CVT,FWD,18
+Toyota,Etios,2021,1496,88,980,Petrol,Manual,FWD,17
+Volkswagen,Polo,2020,1197,75,1030,Petrol,Automatic,FWD,16
+Maruti Suzuki,Dzire,2019,1197,88,890,Petrol,Manual,FWD,22
+Hyundai,Creta,2021,1497,113,1297,Petrol,Automatic,FWD,16
+Kia,Seltos,2020,1497,113,1265,Petrol,Manual,FWD,17
+Ford,EcoSport,2019,1496,120,1235,Petrol,Automatic,FWD,15
+Mahindra,XUV300,2021,1197,110,1230,Petrol,Manual,FWD,18
+Maruti Suzuki,Ertiga,2020,1462,103,1135,Petrol,Manual,FWD,19
+Tata,Nexon,2019,1198,108,1237,Petrol,Automatic,FWD,16
+Renault,Kwid,2021,799,53,800,Petrol,Manual,FWD,22
+Nissan,Magnite,2020,999,71,939,Petrol,Manual,FWD,20
+Mahindra,Scorpio,2019,2179,140,2510,Diesel,Manual,RWD,15
+Hyundai,Creta,2020,1493,113,1265,Diesel,Manual,FWD,21
+Toyota,Innova Crysta,2021,2694,148,1830,Diesel,Automatic,RWD,14
+Mahindra,Bolero,2019,1493,75,1675,Diesel,Manual,RWD,15
+Maruti Suzuki,Eeco,2020,1196,72,915,CNG,Manual,RWD,20
+Ford,Figo,2020,1194,94,1010,Petrol,Manual,FWD,18
+Hyundai,Santro,2019,1086,68,890,Petrol,Manual,FWD,20
+Maruti Suzuki,Alto,2021,796,47,720,Petrol,Manual,FWD,22
+Tata,Tigor,2020,1199,84,1000,Petrol,Automatic,FWD,19
+Honda,WR-V,2021,1199,88,1200,Petrol,Manual,FWD,17
+Mahindra,XUV500,2019,2179,155,1785,Diesel,Automatic,4WD,14
+Kia,Carnival,2020,2199,197,2145,Diesel,Automatic,FWD,13
+Renault,Captur,2021,1498,105,1258,Diesel,Manual,FWD,18
+Nissan,Terrano,2019,1461,108,1305,Diesel,Manual,FWD,16
+Maruti Suzuki,S-Cross,2020,1248,89,1155,Diesel,Manual,FWD,19
+Hyundai,Elite i20,2021,1197,81,1023,Petrol,Manual,FWD,19
+Volkswagen,Tiguan,2019,1968,143,1743,Diesel,Automatic,4WD,16
+Ford,Endeavour,2020,1996,168,2255,Diesel,Automatic,4WD,13
+Toyota,Fortuner,2021,2755,201,2180,Diesel,Automatic,4WD,14
+Mahindra,Marazzo,2019,1497,121,1635,Diesel,Manual,FWD,15
+Maruti Suzuki,Wagon R,2020,998,67,805,CNG,Manual,FWD,22
+Tata,Safari,2021,1956,168,1890,Diesel,Automatic,4WD,14
+Honda,CR-V,2019,1597,152,1637,Petrol,Automatic,4WD,12
+Kia,Stonic,2020,998,118,1205,Petrol,Automatic,FWD,17
+Renault,Lodgy,2021,1461,85,1278,Diesel,Manual,FWD,16
+Nissan,Sunny,2019,1498,98,998,Petrol,Manual,FWD,16
+Hyundai,Santa Fe,2020,2199,194,1900,Diesel,Automatic,4WD,12
+Mahindra,Alturas G4,2021,2157,178,2440,Diesel,Automatic,4WD,11
+Maruti Suzuki,XL6,2019,1462,103,1180,Petrol,Manual,FWD,18
+Tata,Harrier,2020,1956,167,1675,Diesel,Automatic,4WD,14
+Volkswagen,Polo GT,2021,999,109,1130,Petrol,Automatic,FWD,16
+Toyota,Yaris,2021,1496,105,1155,Petrol,CVT,FWD,17
+Hyundai,Tucson,2020,1999,150,1450,Petrol,Automatic,AWD,12
+Ford,Fiesta,2019,1499,121,1112,Diesel,Manual,FWD,21
+Maruti Suzuki,Ignis,2021,1197,82,850,Petrol,Manual,FWD,20
+Tata,Hexa,2020,2179,154,2350,Diesel,Automatic,4WD,14
+Hyundai,i10,2011,1197,79,860,Petrol,Manual,FWD,19
+Maruti Suzuki,Swift Dzire,2012,1197,85,1050,Petrol,Manual,FWD,18
+Ford,Aspire,2015,1194,94,1012,Petrol,Automatic,FWD,17
+Tata,Nano,2010,624,38,635,Petrol,Manual,RWD,22
+Volkswagen,Vento,2014,1598,103,1153,Petrol,Manual,FWD,16
+Honda,CR-V,2013,1997,153,1580,Petrol,Automatic,AWD,11
+Renault,Scala,2012,1498,97,1025,Petrol,Manual,FWD,15
+Mercedes-Benz,S-Class,2018,2999,362,1885,Petrol,Automatic,RWD,10
+BMW,7 Series,2017,2993,265,1950,Diesel,Automatic,RWD,11
+Jaguar,XE,2016,1999,177,1545,Diesel,Automatic,RWD,12
+Lexus,LC,2018,4969,471,1930,Petrol,Automatic,RWD,8
+Audi,A8,2017,2967,286,1935,Diesel,Automatic,AWD,10
+Porsche,Panamera,2018,2995,330,1880,Petrol,Automatic,RWD,9
+Aston Martin,DB11,2017,5198,600,1870,Petrol,Automatic,RWD,8
+Maserati,Quattroporte,2016,2979,410,1900,Petrol,Automatic,RWD,9
+Bentley,Continental GT,2018,5950,626,2250,Petrol,Automatic,AWD,8
+Rolls-Royce,Phantom,2017,6749,563,2550,Petrol,Automatic,RWD,7
+Lamborghini,Huracan,2016,5204,602,1422,Petrol,Automatic,AWD,7
+Ferrari,Portofino,2018,3855,591,1545,Petrol,Automatic,RWD,9
+McLaren,720S,2017,3994,710,1330,Petrol,Automatic,RWD,8
+Bugatti,Chiron,2018,7993,1479,1995,Petrol,Automatic,AWD,5
+Lexus,LX,2016,5663,362,2720,Petrol,Automatic,4WD,6
+Bentley,Bentayga,2017,3996,600,2360,Petrol,Automatic,AWD,7
+Rolls-Royce,Cullinan,2018,6749,563,2660,Petrol,Automatic,AWD,6
+Aston Martin,Vanquish,2016,5935,576,1844,Petrol,Automatic,RWD,7
+Porsche,Cayenne,2017,2995,335,2040,Petrol,Automatic,AWD,9
+Maserati,GranTurismo,2018,4691,454,1880,Petrol,Automatic,RWD,7
+Nissan,Teana,2010,1995,134,1462,Petrol,Automatic,FWD,12
+Kia,Soul,2011,1396,126,1202,Petrol,Automatic,FWD,14
+Mahindra,Xylo,2017,2179,118,1860,Diesel,Manual,RWD,13
+Maruti Suzuki,Wagon R,2018,998,67,805,Petrol,Manual,FWD,22
+Tata,Manza,2015,1368,89,1150,Petrol,Manual,FWD,17
+Hyundai,Verna,2014,1396,104,1080,Diesel,Manual,FWD,19
+Ford,Fiesta,2016,1498,89,1080,Diesel,Manual,FWD,18
+Toyota,Innova,2012,2494,100,1710,Diesel,Manual,RWD,12
+Nissan,Terrano,2013,1461,108,1320,Diesel,Manual,FWD,16
+Kia,Carnival,2017,2199,197,2200,Diesel,Automatic,FWD,12
+Honda,Amaze,2011,1198,86,965,Petrol,Manual,FWD,17
+Volkswagen,Polo,2015,1198,74,1023,Petrol,Manual,FWD,16
+Maruti Suzuki,Ertiga,2012,1373,94,1205,Petrol,Manual,FWD,15
+Honda,Jazz,2019,1199,88,1060,Petrol,CVT,FWD,18
+Volkswagen,T-Roc,2021,1498,148,1350,Petrol,Automatic,FWD,15
+Renault,Koleos,2020,1995,150,1687,Diesel,Automatic,AWD,13
+Nissan,Leaf,2019,0,147,1500,Electric,Automatic,FWD,20
+Mahindra,eKUV100,2021,0,54,920,Electric,Automatic,FWD,22
+Maruti Suzuki,Swift Dzire,2019,1197,88,900,CNG,Manual,FWD,22
+Tata,Tiago,2020,1199,84,990,CNG,Manual,FWD,23
+Hyundai,Venue,2021,998,118,1210,Petrol,Manual,FWD,19
+Kia,Seltos,2019,1497,113,1275,Diesel,Manual,FWD,21
+Ford,EcoSport,2020,1496,120,1225,Petrol,Automatic,FWD,15
+Toyota,Fortuner,2021,2755,201,2180,Diesel,Automatic,4WD,14
+Mahindra,XUV700,2020,1997,152,1985,Diesel,Automatic,4WD,13
+Honda,WR-V,2019,1199,88,1215,Petrol,Manual,FWD,18
+Volkswagen,Vento,2021,999,109,1130,Petrol,Automatic,FWD,16
+Maruti Suzuki,S-Cross,2020,1248,89,1120,Diesel,Manual,FWD,19
+Tata,Harrier,2019,1956,167,1675,Diesel,Automatic,4WD,14
+Hyundai,Creta,2021,1497,113,1285,Petrol,Automatic,FWD,16
+Nissan,Kicks,2020,1498,105,1275,Petrol,Manual,FWD,17
+Renault,Triber,2019,999,71,947,Petrol,Manual,FWD,19
+Mahindra,Marazzo,2021,1497,121,1640,Diesel,Manual,FWD,15
+Maruti Suzuki,Wagon R,2020,998,67,800,CNG,Manual,FWD,22
+Tata,Safari,2021,1956,168,1900,Diesel,Automatic,4WD,14
+Hyundai,i20,2019,1197,81,1020,Petrol,Manual,FWD,18
+Ford,Aspire,2020,1194,94,1010,Petrol,Automatic,FWD,18
+Tata,Nexon EV,2021,0,127,1400,Electric,Automatic,FWD,21
+Hyundai,Alcazar,2021,1493,113,1590,Diesel,Automatic,AWD,15
+Mahindra,Marazzo,2020,1497,121,1635,Diesel,Automatic,FWD,14
+Maruti Suzuki,Ciaz,2019,1462,103,1010,Petrol,Automatic,FWD,18
+Ford,Freestyle,2020,1194,94,1043,Petrol,Manual,FWD,20
+Volkswagen,Ameo,2019,1498,108,1087,Petrol,Manual,FWD,17
+Renault,Duster,2020,1498,104,1205,Petrol,Manual,FWD,15
+Nissan,Micra,2021,1198,75,950,Petrol,Manual,FWD,19
+Kia,Carens,2019,1497,113,1280,Diesel,Manual,FWD,21
+Hyundai,Elantra,2020,1999,150,1300,Petrol,Automatic,FWD,16
+Tata,Sierra,2021,1199,88,1100,Petrol,Manual,FWD,17
+Maruti Suzuki,S-Presso,2019,998,67,726,Petrol,Manual,FWD,21
+Toyota,Corolla Cross,2020,1798,138,1260,Petrol,Automatic,FWD,15
+Mahindra,Supro,2021,1198,59,1220,Petrol,Manual,RWD,20
+Honda,Passport,2019,3471,280,1990,Petrol,Automatic,AWD,12
+Kia,Sportage,2020,1999,181,1650,Petrol,Automatic,FWD,14
+Tata,Winger,2021,1948,100,2170,Diesel,Manual,RWD,12
+Nissan,Sentra,2019,1798,149,1300,Petrol,CVT,FWD,14
+Hyundai,Palisade,2020,3778,291,2200,Petrol,Automatic,AWD,10
+Maruti Suzuki,Jimny,2021,1462,100,1120,Petrol,Manual,4WD,15
+Ford,Mustang,2019,4951,396,1680,Petrol,Automatic,RWD,7
+Volkswagen,Atlas Cross Sport,2020,1984,266,1995,Petrol,Automatic,AWD,10
+Mahindra,XUV300,2020,1197,110,1230,Petrol,Manual,FWD,18
+Kia,Seltos,2021,1497,113,1275,Diesel,Automatic,FWD,19
+Maruti Suzuki,Ertiga,2019,1462,103,1135,Petrol,Manual,FWD,19
+Tata,Nexon,2020,1198,108,1237,Petrol,Automatic,FWD,17
+Renault,Kwid,2019,799,53,800,Petrol,Manual,FWD,22
+Nissan,Magnite,2021,999,71,939,Petrol,Manual,FWD,21
+Hyundai,Grand i10 Nios,2020,1197,81,910,Petrol,Manual,FWD,20
+Volkswagen,Polo,2019,1197,75,1030,Petrol,Automatic,FWD,16
+Maruti Suzuki,Dzire,2021,1197,88,890,Petrol,Manual,FWD,22
+Ford,EcoSport,2020,1496,120,1235,Petrol,Automatic,FWD,15
+Tata,Altroz,2019,1199,85,1036,Petrol,Manual,FWD,20
+Honda,Amaze,2020,1199,88,905,Petrol,CVT,FWD,18
+Toyota,Etios,2019,1496,88,980,Petrol,Manual,FWD,17
+Kia,Soneto,2021,1197,82,1255,Diesel,Manual,FWD,21
+Hyundai,Venue,2020,998,118,1197,Petrol,Automatic,FWD,19
+Nissan,Sunny,2019,1498,98,998,Petrol,Manual,FWD,16
+Volkswagen,Vento,2020,999,109,1130,Petrol,Automatic,FWD,17
+Renault,Duster,2021,1498,104,1205,Petrol,Manual,FWD,15
+Maruti Suzuki,Ignis,2020,1197,82,850,Petrol,Manual,FWD,20
+Ford,Figo,2019,1194,94,1010,Petrol,Manual,FWD,18
+Mahindra,Scorpio,2021,2179,140,2510,Diesel,Manual,RWD,13
+Tata,Tiago,2020,1199,84,982,Petrol,Manual,FWD,21
+Maruti Suzuki,Alto K10,2012,998,67,725,Petrol,Manual,FWD,21
+Hyundai,i20,2015,1197,81,1023,Petrol,Manual,FWD,18
+Tata,Indigo,2010,1396,70,1130,Diesel,Manual,FWD,19
+Ford,Figo,2011,1194,69,1090,Diesel,Manual,FWD,20
+Honda,Accord,2014,2354,180,1490,Petrol,Automatic,FWD,13
+Volkswagen,Passat,2013,1968,138,1480,Diesel,Automatic,FWD,14
+Renault,Pulse,2012,1461,63,1035,Diesel,Manual,FWD,20
+Nissan,Sunny,2016,1498,98,998,Petrol,Manual,FWD,16
+Kia,Seltos,2018,1497,113,1275,Diesel,Automatic,FWD,19
+Hyundai,Creta,2017,1591,121,1237,Petrol,Manual,FWD,16
+Maruti Suzuki,Eeco,2010,1196,73,940,Petrol,Manual,RWD,15
+Mahindra,Verito,2011,1461,64,1175,Diesel,Manual,FWD,18
+Tata,Safari,2013,2179,140,2510,Diesel,Manual,RWD,13
+Honda,Brio,2014,1198,87,940,Petrol,Manual,FWD,18
+Ford,Ecosport,2016,1498,99,1157,Petrol,Automatic,FWD,15
+Maruti Suzuki,Ciaz,2015,1373,91,1025,Petrol,Automatic,FWD,17
+Toyota,Etios Liva,2017,1197,79,980,Petrol,Manual,FWD,19
+Nissan,Micra,2018,1198,76,1010,Petrol,Manual,FWD,18
+Kia,Rio,2011,1396,88,1235,Diesel,Manual,FWD,20
+Volkswagen,Beetle,2012,1197,104,1268,Petrol,Automatic,FWD,14
+Hyundai,Creta,2019,1497,113,1265,Petrol,Manual,FWD,20
+Maruti Suzuki,Wagon R,2021,998,67,805,CNG,Manual,RWD,22
+Honda,City,2022,1498,119,1210,Petrol,Manual,FWD,16
+Maruti Suzuki,Vitara Brezza,2023,1462,103,1180,Petrol,Automatic,FWD,17
+Mahindra,Thar,2022,1997,150,1750,Petrol,Manual,4WD,13
+Kia,Soneto,2023,1197,82,1255,Diesel,Manual,FWD,21
+Renault,Triber,2022,999,71,947,Petrol,Manual,FWD,19
+Hyundai,Venue,2023,998,118,1197,Petrol,Automatic,FWD,18
+Nissan,Kicks,2022,1498,105,1252,Diesel,Manual,FWD,17
+Maruti Suzuki,Celerio,2023,998,67,830,CNG,Manual,FWD,20
+Tata,Safari,2022,1956,168,1890,Diesel,Automatic,4WD,14
+Honda,CR-V,2023,1597,152,1637,Petrol,Automatic,4WD,12
+Kia,Stonic,2022,998,118,1205,Petrol,Automatic,FWD,16
+Renault,Lodgy,2023,1461,85,1278,Diesel,Manual,FWD,16
+Nissan,Sunny,2022,1498,98,998,Petrol,Manual,FWD,16
+Hyundai,Santa Fe,2023,2199,194,1900,Diesel,Automatic,4WD,12
+Mahindra,Alturas G4,2022,2157,178,2440,Diesel,Automatic,4WD,11
+Maruti Suzuki,XL6,2023,1462,103,1180,Petrol,Manual,FWD,18
+Tata,Harrier,2022,1956,167,1675,Diesel,Automatic,4WD,14
+Volkswagen,Polo GT,2023,999,109,1130,Petrol,Automatic,FWD,16
+Ford,Fiesta,2022,1499,121,1112,Diesel,Manual,FWD,21
+Maruti Suzuki,Ignis,2023,1197,82,850,Petrol,Manual,FWD,20
+Tata,Sierra,2022,1199,88,1100,Petrol,Manual,FWD,17
+Maruti Suzuki,S-Presso,2023,998,67,726,Petrol,Manual,FWD,21
+Toyota,Corolla Cross,2022,1798,138,1260,Petrol,Automatic,FWD,15
+Mahindra,Supro,2023,1198,59,1220,Petrol,Manual,RWD,20
+Honda,Passport,2022,3471,280,1990,Petrol,Automatic,AWD,12
+Kia,Sportage,2023,1999,181,1650,Petrol,Automatic,FWD,14
+Tata,Winger,2022,1948,100,2170,Diesel,Manual,RWD,12
+Hyundai,Kona,2022,998,134,1675,Electric,Automatic,FWD,15
+Tata,Tigor EV,2023,0,74,1197,Electric,Automatic,FWD,22
+Renault,Kiger,2022,999,71,1012,Petrol,Manual,FWD,18
+Maruti Suzuki,S-Cross,2023,1462,103,1180,Petrol,Automatic,FWD,17
+Volkswagen,Ameo,2022,1498,108,1087,Petrol,Manual,FWD,16
+Mahindra,Bolero Neo,2023,1493,100,1260,Diesel,Manual,FWD,16
+Ford,Endeavour,2022,1996,168,2255,Diesel,Automatic,4WD,12
+Nissan,Micra,2023,1198,75,950,Petrol,Manual,FWD,20
+Mercedes-Benz,C-Class,2015,1991,181,1695,Petrol,Automatic,RWD,12
+Audi,A4,2016,1984,187,1575,Diesel,Automatic,FWD,14
+BMW,3 Series,2014,1995,190,1520,Diesel,Automatic,RWD,13
+Jaguar,XF,2013,1999,187,1800,Diesel,Automatic,RWD,11
+Lexus,ES,2015,2494,176,1660,Petrol,Automatic,FWD,14
+Volvo,S60,2014,1984,161,1650,Diesel,Automatic,FWD,15
+Audi,A6,2017,1968,187,1750,Diesel,Automatic,AWD,12
+BMW,5 Series,2016,1995,187,1655,Diesel,Automatic,RWD,13
+Mercedes-Benz,E-Class,2015,1991,181,1725,Petrol,Automatic,RWD,11
+Lexus,LS,2014,4969,386,2170,Petrol,Automatic,RWD,8
+Jaguar,XJ,2013,2993,271,1930,Diesel,Automatic,RWD,10
+Maserati,Ghibli,2015,2979,345,1870,Petrol,Automatic,RWD,10
+Volvo,S90,2016,1969,232,1820,Petrol,Automatic,AWD,12
+Land Rover,Range Rover Sport,2014,2993,255,2320,Diesel,Automatic,4WD,10
+Audi,Q7,2017,2967,246,2330,Diesel,Automatic,AWD,11
+Mercedes-Benz,GLC,2015,2143,168,1940,Diesel,Automatic,AWD,13
+BMW,X5,2016,1995,255,2185,Diesel,Automatic,4WD,12
+Lexus,RX,2014,3456,275,2100,Petrol,Automatic,AWD,10
+Maserati,Levante,2015,2979,345,2200,Petrol,Automatic,4WD,9
+Jaguar,F-PACE,2017,1997,247,1861,Diesel,Automatic,AWD,11
+Kia,Carens,2022,1497,113,1280,Diesel,Manual,FWD,20
+Hyundai,Alcazar,2023,1493,113,1590,Diesel,Automatic,AWD,14
+Maruti Suzuki,Wagon R,2022,998,67,800,CNG,Manual,FWD,23
+Mahindra,Marazzo,2023,1497,121,1640,Diesel,Manual,FWD,15
+Honda,Jazz,2022,1199,88,1060,Petrol,CVT,FWD,19
+Toyota,Fortuner,2023,2755,201,2180,Diesel,Automatic,4WD,14
+Kia,Seltos,2022,1497,113,1275,Diesel,Automatic,FWD,19
+Maruti Suzuki,Ciaz,2023,1462,103,1010,Petrol,Automatic,FWD,18
+Ford,Freestyle,2022,1194,94,1043,Petrol,Manual,FWD,20
+Nissan,Sentra,2023,1798,149,1300,Petrol,CVT,FWD,14
+Tata,Hexa,2022,2179,154,2350,Diesel,Automatic,4WD,13
+Honda,Passport,2023,3471,280,1990,Petrol,Automatic,AWD,12
+Volkswagen,Tiguan,2022,1984,143,1743,Petrol,Automatic,4WD,11
+Hyundai,Santa Fe,2023,2199,194,1900,Diesel,Automatic,4WD,12
+Tata,Safari,2022,1956,168,1890,Diesel,Automatic,4WD,14

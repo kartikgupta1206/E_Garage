@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+     
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>E-GARAGE PORTAL</title>
+    <link rel="icon" type="image/x-icon" href="static/logo_new.jpg" />
+    <link href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nanum+Brush+Script&family=Open+Sans:wght@600&family=Poppins:wght@200;400;500;600;700;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            padding-top: 70px;
+            background-color:black;
+        }
+        a{
+            color: wheat;
+            text-decoration: none;
+        }
+        .card {
+            margin-bottom: 20px;
+            border: none;
+        }
+
+        .card-title {
+            font-size: 20px;
+        }
+
+        .jumbotron {
+            
+            color: #ecf0f1;
+            text-align: center;
+            background: linear-gradient(45deg,#d106ff,darkblue, cyan, #2452db , black,#2452db,cyan,violet, black);
+            background-size: 700% 100%;
+            animation: gradient 4s linear infinite;
+            animation-direction: alternate;
+        }
+        @keyframes gradient {
+            0% {background-position: 0%}
+            100% {background-position: 100%}
+        }
+                
+        .jumbotron h2 {
+            font-size: 24px;
+        }
+
+        #clock {
+            font-size: 17px;
+            right: 0;
+            position: absolute;
+            width: 90px;
+            color: red;
+            text-align: right;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            text-decoration: none;
+            z-index: 5;
+            padding-top: 3px;
+            overflow: hidden;
+            background-color: rgba(62, 62, 189, 0.78);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 64px;
+        }
+
+        li {
+            display: inline-flex;
+            float: right;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px 18px;
+            text-decoration: none;
+        }
+
+        li a.name:hover {
+            font-size: 150%;
+            text-decoration: none;
+        }
+
+        li a.ex2:hover,
+        a.ex2:active {
+            font-size: 110%;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: rgb(128, 0, 247);
+            text-decoration: none;
+        }
+
+        .name {
+            color: white;
+            top: 10px;
+            left: 10 px;
+            position: absolute;
+            text-decoration:none;
+            font-size: 25px;
+        }
+
+        .glow {
+            font-size: 25px;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #e60073, 0 0 3px #e60073, 0 0 4px #e60073, 0 0 5px #e60073, 0 0 6px #e60073;
+            }
+
+            to {
+                text-shadow: 0 0 4px #fff, 0 0 5px blue, 0 0 6px blue, 0 0 7px red, 0 0 8px pink, 0 0 9px darkblue, 0 0 9px cyan;
+            }
+        }
+        .container {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: darkgray;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-left: 6px solid rgb(2, 0, 128);
+        left: 0.5%;
+    }
+
+    .box {
+        background-color: #d9d9d9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-left: 6px solid cyan;
+    }
+
+    .full-width {
+        width: 100%;
+        height: 100px;
+    }
+
+
+    .half-width {
+        /* width: calc(50% - 10px); */
+        width: 50%;
+        background-image: linear-gradient(to left, #45c5d1, #21a8d9);
+        background-size: 200% 100%;
+        animation: gradientMove 3s ease infinite;
+       margin: 20px;
+       border: none;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.7s ease;
+       
+    }
+    @keyframes gradientMove {
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 100% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
+    .half-width:hover {
+  transform: scale(1.05); /* Adjust the scale factor as needed */
+}
+    .half-width1 {
+        /* width: calc(50% - 10px); */
+        width: 50%;
+        background-image: linear-gradient(to left, #f27405, #fa02ee);
+        background-size: 200% 100%;
+        animation: gradientMove 3s ease infinite;
+       margin: 20px;
+       border: none;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.6s ease;
+    }
+    .half-width1:hover {
+  transform: scale(1.05); /* Adjust the scale factor as needed */
+}
+    .half-width2 {
+        /* width: calc(50% - 10px); */
+        width: 50%;
+        background-image: linear-gradient(to right, #5703ff, #02e1fa);
+        background-size: 200% 100%;
+        animation: gradientMove 3s ease infinite;
+       margin: 20px;
+       border: none;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.6s ease;
+    }
+    .half-width2:hover {
+  transform: scale(1.05); /* Adjust the scale factor as needed */
+}
+    .half-width3 {
+        /* width: calc(50% - 10px); */
+        width: 50%;
+        background-image: linear-gradient(to right, #fa02fa, #fa027e);
+        background-size: 200% 100%;
+        animation: gradientMove 3s ease infinite;
+       margin: 20px;
+       border: none;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.6s ease;
+    }
+    .half-width3:hover {
+  transform: scale(1.05); /* Adjust the scale factor as needed */
+}
+    
+
+    .con_small{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        height: 50px;
+        width: 50px;
+        overflow: hidden;
+        position: relative;
+        right: 50px;
+    }
+    
+    .full-width1{
+      height:650px;
+      border-left: 6px solid red;
+      border-right: 6px solid red;
+      border-top: 6px solid purple;
+      border-bottom: 6px solid purple;
+    }
+    .btn-Update{
+      justify-content: center;
+      align: center;
+      cursor: pointer;
+      
+  -webkit-transition-duration: 0.4s;  
+  transition-duration: 0.4s;
+  border: none;
+  height: 30px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius:5px;
+    }
+    .btn-Update:hover {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .button-container {
+        position: relative;
+        
+      }
+      .home-logo4 {
+        position: fixed;
+        display: flex;
+        height: 60px;
+        width: 60px;
+        z-index: 10;
+        bottom: 5px;
+        right: 5px;
+      }
+      .mes {
+        background-color: #007bff; /* Bright blue color */
+        color: white; /* Text color */
+        padding: 10px 20px; /* Padding */
+        font-size: 16px; /* Font size */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Rounded corners */
+        position: absolute; /* Absolute position */
+        bottom: 20px; /* Distance from the bottom */
+        right: 20px; /* Distance from the right */
+        cursor: pointer; /* Cursor style */
+      }
+    
+      /* Hover effect */
+      .mes:hover {
+        background-color: #0056b3; 
+        color:black;/* Darker blue color */
+      }
+    li .name1{
+        color: grey;
+        font-size:30px;
+        justify-content:center;
+        align-text:center;
+        position:absolute;
+        display:flex;
+        right:10%;
+    }
+    .car_logo{
+        height:130px;
+        width:130px;
+        border-radius:50%;
+        position:absolute;
+        display:flex;
+        right:10%;  
+    }
+    .buttons{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    </style>
+    </head>
+
+    <body>
+        <ul>
+            <a href="dashboard_client"><img src="/static/logo_new.jpg/" class="logo" alt="LOGO"></a>
+            <div class="name"><a href="dashboard_client">E-GARAGE</a></div>
+            <li><a href="{{ url_for('login')}}" class="ex2">Log Out</a></li>
+            <li><div class="name1" >{{full_name}}</div></li>
+
+
+        </ul>
+        <div id="clock">8:10:45</div>
+
+        <!-- Jumbotron with welcome message -->
+        <div class="jumbotron">
+            <h2>
+                <div class="glow">Welcome </div>
+            </h2>
+            <h3>{{ full_name }}</h3>
+        </div>
+        <div class="container">
+            <div class="box full-width">
+                <!-- Content for the top full-width box -->
+                <p>Phone No: +91-{{phone_no}}</p>
+                
+                <p>Email: {{email}}</p>
+                <div class="buttons">
+                <button class="btn-Update"><a href="{{ url_for('update_name')}}">Update Name</a></button>
+                <button class="btn-Update"><a href="{{ url_for('update_phone')}}">Update Phone Number</a></button>
+                <button class="btn-Update"><a href="{{ url_for('update_pass')}}">Update Password</a></button>
+            </div>
+            </div>
+            
+            <div class="con_small">
+            <div class="box half-width">
+              
+                <h2>Car Model</h2>
+                <p>{{car_model}}</p>
+                
+            </div>
+            <div class="box half-width1">
+                <h2>Year of Mfg</h2>
+                <p>{{year_of_purchase}}</p>
+            </div>
+            <div class="box half-width2">
+                <h2>KM Driven</h2>
+                <p>{{KM_driven}} KM</p>
+            </div>
+            <div class="box half-width3">
+                <!-- Content for the fourth block below -->
+                <h2>Last Service</h2>
+                <p>{{last_service}}</p>
+            </div>            
+        </div>
+        
+        <div class="box full-width1">
+                <!-- Content for the top full-width box -->
+                <img src="{{ image_path }}" alt="Car Image" class="car_logo">
+                <p><b>Fuel Type         :</b> {{fuel_type}}</p>
+                <p><b>Seller Type       :</b> {{seller_type}}</p>
+                <p><b>Transmission Type :</b> {{transmission_type}}</p>
+                <p><b>No. of owner      :</b> {{owner_type}}</p>
+                <p><b>Mileage of car    :</b> {{mileage}} KMPL</p>
+                <p><b>Engine (in CC)    :</b> {{engine}} CC</p>
+                <p><b>Power (in BHP)    :</b> {{power}} BHP</p>
+                <p><b>No. of seats      :</b> {{seat}}</p>
+                <p><b>Weight (in Kg)    :</b> {{weight}} Kg</p>
+                <p><b>Drive Mode        :</b> {{drive_mode}}</p>
+                <p><b>Engine Oil changed:</b> {{engine_oil}} Km</p>
+                <p><b>Break Pad changed :</b> {{break_pad}} Km </p>
+                <p><b>Gear Oil changed  :</b> {{tranmission_fuild}} Km</p>
+                <p><b>Spark Plug changed:</b> {{spark_plug}} Km</p>
+                <p><b>Tire changed      :</b> {{tire_rotation}} Km</p>
+                <div class="button-container">
+                    <!-- Button -->
+                    <button class="mes"><a href="{{ url_for('message')}}">Service points add</a></button>
+                  </div>
+                
+            </div>
+            <a href="{{ url_for('enterprise') }}"
+      ><img alt="image" src="static/logo_new.jpg" class="home-logo4"
+    /></a>
+       
+        <script>
+            // Calling showTime function at every second
+            setInterval(showTime, 1000);
+    
+            // Defining showTime funcion
+            function showTime() {
+                // Getting current time and date
+                let time = new Date();
+                let hour = time.getHours();
+                let min = time.getMinutes();
+                let sec = time.getSeconds();
+                am_pm = "AM";
+    
+                // Setting time for 12 Hrs format
+                if (hour >= 12) {
+                    if (hour > 12) hour -= 12;
+                    am_pm = "PM";
+                } else if (hour == 0) {
+                    hr = 12;
+                    am_pm = "AM";
+                }
+    
+                hour =
+                    hour < 10 ? "0" + hour : hour;
+                min = min < 10 ? "0" + min : min;
+                sec = sec < 10 ? "0" + sec : sec;
+    
+                let currentTime =
+                    hour +
+                    ":" +
+                    min +
+                    ":" +
+                    sec +
+                    am_pm;
+    
+                // Displaying the time
+                document.getElementById(
+                    "clock"
+                ).innerHTML = currentTime;
+            }
+    
+            showTime();
+        </script>
+  </body>
+
+</html>

@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>E-GARAGE PORTAL</title>
+    <link rel="icon" type="image/x-icon" href="static/logo_new.jpg" />
+    <meta property="og:title" content="Agency modern template" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+      .home-logo4 {
+        position: fixed;
+        display: flex;
+        height: 60px;
+        width: 60px;
+        z-index: 10;
+        bottom: 5px;
+        right: 5px;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Noto Sans;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/fuelnewstyle.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="static\mainpagestyle.css" />
+    <div>
+      <link href="static\mainpage.css" rel="stylesheet" />
+    <link rel="stylesheet" href="static/fuelnewstyle.css" />
+    <div>
+      <link href="static/fuel_new_one.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div class="home-navbar">
+          <header data-thq="thq-navbar" class="home-navbar-interactive">
+            <div class="home-branding">
+              <img alt="image" src="static/logo_new.jpg" class="home-logo" />
+              <span class="home-company">E-Garage</span>
+            </div>
+            <div class="home-items">
+              <div class="home-links">
+                <a href="{{ url_for('index') }}">
+                  <span class="nav-link">Home</span></a
+                >
+                <a href="{{ url_for('maintenance') }}"
+                  ><span class="nav-link">Maintenance Prediciton</span></a
+                >
+                <a href="{{ url_for('car_price') }}"
+                  ><span class="nav-link">Price Predicition</span></a
+                >
+                <a href="{{ url_for('error') }}">
+                  <span class="nav-link">Fuel Effeciency Check</span></a
+                >
+                <a href="{{ url_for('login') }}">
+                  <span class="nav-link">Login</span></a
+                >
+              </div>
+            </div>
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <button class="home-button button">
+                <img
+                  alt="image"
+                  src="static/hamburger.svg"
+                  class="home-image"
+                />
+                <span class="home-text2">Start a project</span>
+              </button>
+            </div>
+            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+              <div
+                data-thq="thq-mobile-menu-nav"
+                data-role="Nav"
+                class="home-nav"
+              >
+                <div class="home-top">
+                  <div class="home-branding1">
+                    <img
+                      alt="image"
+                      src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
+                      class="home-logo1"
+                    />
+                    <span class="home-company1">SPYRL</span>
+                  </div>
+                  <div data-thq="thq-close-menu" class="home-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="home-icon">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="home-items1">
+                  <div class="home-links1">
+                    <span class="nav-link">Work</span>
+                    <span class="nav-link">Services</span>
+                    <span class="nav-link">About</span>
+                    <span class="nav-link">Contact</span>
+                  </div>
+                  <button class="start-button button home-button1">
+                    <span class="home-text7">Start a project</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+
+        <video
+          src="https://tenor.com/view/classic-cars-colorful-cars-gif-16778789"
+          loop="true"
+          muted="true"
+          poster="https://images.unsplash.com/photo-1488672219853-a0281f9ac59d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE0fHxmdWVsfGVufDB8fHx8MTcwOTA1NzQ2Mnww&ixlib=rb-4.0.3&w=1500"
+          preload="auto"
+          autoplay="true"
+          playsinline="true"
+          class="home-video"
+        ></video>
+        <header class="home-hero">
+          <div class="home-header">
+            <h1 class="home-title">BE the change you wanna see</h1>
+            <p class="home-description">
+              "Revitalize Your Ride with Our Expert Services".
+            </p>
+          </div>
+        </header>
+        <div class="home-featured">
+          <div class="home-container1">
+            <div class="home-container2">
+              <style>
+                body {
+                  background-image: url("background-image.jpg"); /* Replace 'background-image.jpg' with the path to your background image */
+                  background-size: cover;
+                  font-family: Arial, sans-serif;
+                }
+                .container {
+                  max-width: 400px;
+                  margin: 50px auto;
+                  padding: 20px;
+                  background: rgba(0, 0, 0, 0.6); /* black color */
+                  border-radius: 10px;
+                  color: #fff; /* white text color */
+                }
+                .form-group {
+                  margin-bottom: 20px;
+                }
+                label {
+                  display: block;
+                  margin-bottom: 5px;
+                  color: #fff; /* white text color */
+                }
+                input[type="text"],
+                input[type="number"],
+                select {
+                  width: 100%;
+                  padding: 10px;
+                  border: 1px solid #fff; /* white border */
+                  border-radius: 5px;
+                  box-sizing: border-box;
+                  background-color: rgba(
+                    255,
+                    255,
+                    255,
+                    0.2
+                  ); /* slightly transparent white background */
+                  color: #fff; /* white text color */
+                  margin-top: 5px;
+                }
+                select option {
+                  color: #000; /* black text color for options */
+                }
+                input[type="submit"] {
+                  width: 100%;
+                  padding: 10px;
+                  border: none;
+                  border-radius: 5px;
+                  background-color: #4caf50; /* green color */
+                  color: white;
+                  cursor: pointer;
+                }
+                input[type="submit"]:hover {
+                  background-color: #45a049; /* darker green color on hover */
+                }
+                #result {
+                  margin-top: 20px;
+                  background-color: rgba(
+                    255,
+                    255,
+                    255,
+                    0.2
+                  ); /* slightly transparent white background */
+                  padding: 10px;
+                  border-radius: 5px;
+                  color: #fff; /* white text color */
+                }
+              </style>
+
+              <div class="container">
+                <h2 style="text-align: center">Fuel Cost Calculator</h2>
+                <form id="fuelForm">
+                  <div class="form-group">
+                    <label for="city">City:</label>
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      placeholder="Enter city name"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="mileage">Mileage (KPL/KPKG):</label>
+                    <input
+                      type="number"
+                      id="mileage"
+                      name="mileage"
+                      placeholder="Enter car mileage"
+                      s=""
+                      mileage&#x27;=""
+                      required=""
+                      step="0.01"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="fuel_type">Fuel Type:</label>
+                    <select id="fuel_type" name="fuel_type" required="">
+                      <option value="" disabled="" selected="">
+                        Select fuel type
+                      </option>
+                      <option value="Petrol">Petrol</option>
+                      <option value="Diesel">Diesel</option>
+                    </select>
+                    <br>
+                    <div class="form-group">
+                    <label for="distanceInput">Distance travelled (in kilometers):</label>
+                    <input type="number" id="distanceInput" placeholder="Enter the distance travelled" required>
+                    </div>
+                  </div>
+                  <input type="submit" value="Calculate Cost" />
+                </form>
+                <div id="result"></div>
+              </div>
+              <a href="{{ url_for('milpredict') }}">
+                <center><button class="button"><span>To get to know your car mileage Click here </span></button></center></a>
+              <script>
+                document.getElementById("fuelForm").addEventListener("submit", function (event) {
+                    event.preventDefault(); // Prevent form submission
+
+                    var city = document.getElementById("city").value;
+                    var mileage = parseFloat(document.getElementById("mileage").value);
+                    var fuelType = document.getElementById("fuel_type").value;
+                    var distance = parseFloat(document.getElementById('distanceInput').value);
+                    
+                    // Fetch fuel prices from embedded data
+                    var fuelPrices = {
+                      Adilabad: { Diesel: 99.84, Petrol: 111.83 },
+                      "Agar Malwa": { Diesel: 94.89, Petrol: 109.7 },
+                      Agra: { Diesel: 89.8, Petrol: 96.63 },
+                      Ahmadnagar: { Diesel: 93.03, Petrol: 106.53 },
+                      Ahmedabad: { Diesel: 92.17, Petrol: 96.42 },
+                      Aizawl: { Diesel: 82.18, Petrol: 95.73 },
+                      Ajmer: { Diesel: 93.44, Petrol: 108.17 },
+                      Akola: { Diesel: 92.69, Petrol: 106.14 },
+                      Alappuzha: { Diesel: 97.45, Petrol: 108.58 },
+                      Aligarh: { Diesel: 89.94, Petrol: 96.79 },
+                      Alipurduar: { Diesel: 93.9, Petrol: 107.26 },
+                      Alirajpur: { Diesel: 95.67, Petrol: 110.57 },
+                      Allahabad: { Diesel: 90.46, Petrol: 97.27 },
+                      Almora: { Diesel: 90.59, Petrol: 95.66 },
+                      Alwar: { Diesel: 94.41, Petrol: 109.26 },
+                      Ambala: { Diesel: 90.29, Petrol: 97.45 },
+                      Ambedkarnagar: { Diesel: 90.69, Petrol: 97.53 },
+                      "Amethi Csm Nagar": { Diesel: 90.13, Petrol: 96.95 },
+                      Amravati: { Diesel: 93.74, Petrol: 107.23 },
+                      Amreli: { Diesel: 93.72, Petrol: 97.95 },
+                      Amritsar: { Diesel: 87.9, Petrol: 97.55 },
+                      Amroha: { Diesel: 90.13, Petrol: 96.96 },
+                      Anand: { Diesel: 92.34, Petrol: 96.59 },
+                      Anantapur: { Diesel: 99.42, Petrol: 111.66 },
+                      Anantnag: { Diesel: 85.97, Petrol: 100.8 },
+                      Angul: { Diesel: 96.37, Petrol: 104.86 },
+                      Anupur: { Diesel: 96.16, Petrol: 111.1 },
+                      Araria: { Diesel: 95.88, Petrol: 109.23 },
+                      Aravalli: { Diesel: 92.91, Petrol: 97.16 },
+                      Ariyalur: { Diesel: 95.08, Petrol: 103.45 },
+                      Arwal: { Diesel: 94.57, Petrol: 107.81 },
+                      Ashoknagar: { Diesel: 93.94, Petrol: 108.71 },
+                      Auraiya: { Diesel: 90.13, Petrol: 96.96 },
+                      Aurangabad: { Diesel: 95.07, Petrol: 108.35 },
+                      Azamgarh: { Diesel: 90.86, Petrol: 97.7 },
+                      Badgam: { Diesel: 86.97, Petrol: 101.98 },
+                      Badwani: { Diesel: 95.22, Petrol: 110.06 },
+                      Bagalkot: { Diesel: 88.46, Petrol: 102.55 },
+                      Bageshwar: { Diesel: 91.03, Petrol: 95.98 },
+                      Baghpat: { Diesel: 89.57, Petrol: 96.39 },
+                      Bahraich: { Diesel: 90.3, Petrol: 97.11 },
+                      Baksa: { Diesel: 89.09, Petrol: 97.57 },
+                      Balaghat: { Diesel: 96.25, Petrol: 111.19 },
+                      Baleshwar: { Diesel: 94.81, Petrol: 103.23 },
+                      Ballia: { Diesel: 91.74, Petrol: 98.6 },
+                      Balod: { Diesel: 96.55, Petrol: 103.58 },
+                      Balodabazar: { Diesel: 95.98, Petrol: 103.01 },
+                      Balrampur: { Diesel: 97.62, Petrol: 104.66 },
+                      "Banas Kantha": { Diesel: 92.38, Petrol: 96.62 },
+                      Banda: { Diesel: 90.63, Petrol: 97.48 },
+                      Bandipora: { Diesel: 87.36, Petrol: 102.4 },
+                      Bangalore: { Diesel: 87.89, Petrol: 101.94 },
+                      "Bangalore Rural": { Diesel: 88.03, Petrol: 102.09 },
+                      Banka: { Diesel: 94.73, Petrol: 108 },
+                      Bankura: { Diesel: 93.01, Petrol: 106.28 },
+                      Banswara: { Diesel: 95.17, Petrol: 110.08 },
+                      Barabanki: { Diesel: 90, Petrol: 96.81 },
+                      Baramullah: { Diesel: 87.13, Petrol: 102.16 },
+                      Baran: { Diesel: 93.92, Petrol: 108.71 },
+                      Bareilly: { Diesel: 89.45, Petrol: 96.26 },
+                      Bargarh: { Diesel: 96.04, Petrol: 104.5 },
+                      Barmer: { Diesel: 95.34, Petrol: 110.26 },
+                      Barnala: { Diesel: 87.44, Petrol: 97.08 },
+                      Barpeta: { Diesel: 89.05, Petrol: 97.53 },
+                      Bastar: { Diesel: 98.23, Petrol: 105.29 },
+                      Basti: { Diesel: 90.13, Petrol: 96.93 },
+                      Bathinda: { Diesel: 87.39, Petrol: 97.03 },
+                      Begusarai: { Diesel: 93.74, Petrol: 106.95 },
+                      Belgaum: { Diesel: 88.55, Petrol: 102.64 },
+                      Bellary: { Diesel: 89.53, Petrol: 103.73 },
+                      Bemetara: { Diesel: 95.88, Petrol: 102.91 },
+                      Betul: { Diesel: 94.83, Petrol: 109.66 },
+                      "Bhadradri Kothagudem": { Diesel: 98.86, Petrol: 110.78 },
+                      Bhadrak: { Diesel: 95.29, Petrol: 103.73 },
+                      Bhagalpur: { Diesel: 94.8, Petrol: 108.08 },
+                      Bhandara: { Diesel: 93.22, Petrol: 106.69 },
+                      Bharatpur: { Diesel: 93.88, Petrol: 108.68 },
+                      Bharuch: { Diesel: 92.74, Petrol: 96.99 },
+                      Bhavnagar: { Diesel: 93.74, Petrol: 97.99 },
+                      Bhilwara: { Diesel: 93.89, Petrol: 108.66 },
+                      Bhind: { Diesel: 94.34, Petrol: 109.12 },
+                      Bhiwani: { Diesel: 90.36, Petrol: 97.5 },
+                      Bhojpur: { Diesel: 94.65, Petrol: 107.89 },
+                      Bhopal: { Diesel: 93.9, Petrol: 108.65 },
+                      Bid: { Diesel: 93.94, Petrol: 107.46 },
+                      Bidar: { Diesel: 88.23, Petrol: 102.28 },
+                      Bijapur: { Diesel: 99.77, Petrol: 106.85 },
+                      Bijnor: { Diesel: 89.69, Petrol: 96.5 },
+                      Bikaner: { Diesel: 96.08, Petrol: 111.08 },
+                      Bilaspur: { Diesel: 95.66, Petrol: 102.67 },
+                      Birbhum: { Diesel: 93.58, Petrol: 106.91 },
+                      Bishnupur: { Diesel: 87.17, Petrol: 101.23 },
+                      Biswanath: { Diesel: 89.41, Petrol: 97.87 },
+                      Bokaro: { Diesel: 95, Petrol: 100.21 },
+                      Bolangir: { Diesel: 97.17, Petrol: 105.67 },
+                      Bongaigaon: { Diesel: 88.55, Petrol: 97.01 },
+                      Botad: { Diesel: 93.39, Petrol: 97.64 },
+                      Boudh: { Diesel: 96.67, Petrol: 105.18 },
+                      Budaun: { Diesel: 89.67, Petrol: 96.48 },
+                      Bulandshahr: { Diesel: 90.34, Petrol: 97.2 },
+                      Buldhana: { Diesel: 94.55, Petrol: 108.11 },
+                      Bundi: { Diesel: 93.24, Petrol: 107.96 },
+                      Burhanpur: { Diesel: 95.55, Petrol: 110.42 },
+                      Buxar: { Diesel: 95.46, Petrol: 108.76 },
+                      Cachar: { Diesel: 89.13, Petrol: 97.57 },
+                      "Central Delhi": { Diesel: 89.62, Petrol: 96.72 },
+                      Chamba: { Diesel: 86.28, Petrol: 97.17 },
+                      Chamoli: { Diesel: 93.06, Petrol: 98.29 },
+                      Champawat: { Diesel: 90.37, Petrol: 95.25 },
+                      Champhai: { Diesel: 83.77, Petrol: 97.59 },
+                      Chamrajnagar: { Diesel: 88, Petrol: 102.06 },
+                      Chandauli: { Diesel: 89.82, Petrol: 96.63 },
+                      Chandel: { Diesel: 87.55, Petrol: 101.65 },
+                      Chandigarh: { Diesel: 84.26, Petrol: 96.2 },
+                      Chandrapur: { Diesel: 92.94, Petrol: 106.39 },
+                      Changlang: { Diesel: 84.66, Petrol: 95.39 },
+                      Charaideo: { Diesel: 89.26, Petrol: 97.74 },
+                      "Charki Dadri": { Diesel: 89.85, Petrol: 96.98 },
+                      Chatra: { Diesel: 96.26, Petrol: 101.46 },
+                      Chennai: { Diesel: 94.24, Petrol: 102.63 },
+                      Chhatarpur: { Diesel: 95.19, Petrol: 110.06 },
+                      Chhindware: { Diesel: 94.99, Petrol: 109.81 },
+                      Chhotaudepur: { Diesel: 92.15, Petrol: 96.41 },
+                      Chikkaballapura: { Diesel: 87.67, Petrol: 101.69 },
+                      Chikmagalur: { Diesel: 88.19, Petrol: 102.36 },
+                      Chirang: { Diesel: 88.51, Petrol: 96.98 },
+                      Chitradurga: { Diesel: 89.32, Petrol: 103.63 },
+                      Chitrakut: { Diesel: 90.72, Petrol: 97.54 },
+                      Chittaurgarh: { Diesel: 93.68, Petrol: 108.43 },
+                      Chittoor: { Diesel: 100.3, Petrol: 112.66 },
+                      Churachandpur: { Diesel: 87.51, Petrol: 101.61 },
+                      Churu: { Diesel: 95.03, Petrol: 109.93 },
+                      Coimbatore: { Diesel: 94.78, Petrol: 103.17 },
+                      "Cooch Bihar": { Diesel: 94.03, Petrol: 107.39 },
+                      Cuddalore: { Diesel: 96.56, Petrol: 105.01 },
+                      Cuddapah: { Diesel: 98.51, Petrol: 110.7 },
+                      Cuttack: { Diesel: 95.1, Petrol: 103.54 },
+                      Dahod: { Diesel: 92.71, Petrol: 96.96 },
+                      "Dakshin Dinajpur": { Diesel: 93.07, Petrol: 106.36 },
+                      "Dakshin Kannad": { Diesel: 87.31, Petrol: 101.34 },
+                      Daman: { Diesel: 89.86, Petrol: 94.31 },
+                      Damoh: { Diesel: 94.79, Petrol: 109.62 },
+                      Dantewada: { Diesel: 99.31, Petrol: 106.39 },
+                      Darbhanga: { Diesel: 94.65, Petrol: 107.91 },
+                      Darjeeling: { Diesel: 94.27, Petrol: 108.02 },
+                      Darrang: { Diesel: 88.92, Petrol: 97.4 },
+                      Datia: { Diesel: 94.56, Petrol: 109.36 },
+                      Dausa: { Diesel: 94.28, Petrol: 109.12 },
+                      Davangere: { Diesel: 89.33, Petrol: 103.63 },
+                      Dehradun: { Diesel: 90.35, Petrol: 95.31 },
+                      "Delhi Shahdara": { Diesel: 89.62, Petrol: 96.72 },
+                      Deogarh: { Diesel: 94.35, Petrol: 99.57 },
+                      Deoria: { Diesel: 89.81, Petrol: 96.63 },
+                      "Devbhumi Dwarka": { Diesel: 92.52, Petrol: 96.77 },
+                      Dewas: { Diesel: 93.84, Petrol: 108.56 },
+                      Dhalai: { Diesel: 87.66, Petrol: 98.66 },
+                      Dhamtari: { Diesel: 95.66, Petrol: 102.68 },
+                      Dhanbad: { Diesel: 94.6, Petrol: 99.8 },
+                      Dhar: { Diesel: 94.79, Petrol: 109.61 },
+                      Dharmapuri: { Diesel: 95.5, Petrol: 103.9 },
+                      Dharwad: { Diesel: 87.7, Petrol: 101.7 },
+                      Dhaulpur: { Diesel: 94.02, Petrol: 108.83 },
+                      Dhemaji: { Diesel: 89.62, Petrol: 98.11 },
+                      Dhenkanal: { Diesel: 95.52, Petrol: 103.98 },
+                      Dhuburi: { Diesel: 89.88, Petrol: 98.38 },
+                      Dhule: { Diesel: 92.54, Petrol: 106.01 },
+                      "Dibang Valley": { Diesel: 84.57, Petrol: 95.3 },
+                      Dibrugarh: { Diesel: 88.91, Petrol: 97.38 },
+                      "Dima Hasao": { Diesel: 90.37, Petrol: 98.83 },
+                      Dimapur: { Diesel: 86.65, Petrol: 98.28 },
+                      Dindigul: { Diesel: 95.31, Petrol: 103.7 },
+                      Dindori: { Diesel: 95.36, Petrol: 110.22 },
+                      Diu: { Diesel: 90.81, Petrol: 95.26 },
+                      Doda: { Diesel: 85.85, Petrol: 100.66 },
+                      Dumka: { Diesel: 95.31, Petrol: 100.53 },
+                      Dungarpur: { Diesel: 95.09, Petrol: 109.99 },
+                      Durg: { Diesel: 95.61, Petrol: 102.63 },
+                      "East Champaran": { Diesel: 95.35, Petrol: 108.64 },
+                      "East Delhi": { Diesel: 89.62, Petrol: 96.72 },
+                      "East District": { Diesel: 89.9, Petrol: 102.85 },
+                      "East Garo Hills": { Diesel: 84.78, Petrol: 96.27 },
+                      "East Godavari": { Diesel: 99.88, Petrol: 112.22 },
+                      "East Imphal": { Diesel: 87.13, Petrol: 101.19 },
+                      "East Jaintia Hills": { Diesel: 85.34, Petrol: 97.01 },
+                      "East Khameng": { Diesel: 83.91, Petrol: 94.74 },
+                      "East Khasi Hills": { Diesel: 84.68, Petrol: 96.44 },
+                      "East Siang": { Diesel: 84.22, Petrol: 94.97 },
+                      "East Singhbhum": { Diesel: 95.08, Petrol: 100.29 },
+                      Ernakulam: { Diesel: 96.58, Petrol: 107.65 },
+                      Erode: { Diesel: 94.98, Petrol: 103.36 },
+                      Etah: { Diesel: 89.85, Petrol: 96.68 },
+                      Etawah: { Diesel: 90.06, Petrol: 96.9 },
+                      Faizabad: { Diesel: 90.42, Petrol: 97.25 },
+                      Faridabad: { Diesel: 90.11, Petrol: 97.25 },
+                      Faridkot: { Diesel: 87.6, Petrol: 97.25 },
+                      Farrukkhabad: { Diesel: 90.24, Petrol: 97.06 },
+                      Fatehabad: { Diesel: 90.81, Petrol: 97.98 },
+                      "Fatehgarh Sahib": { Diesel: 88.12, Petrol: 97.79 },
+                      Fatehpur: { Diesel: 90.51, Petrol: 97.35 },
+                      Fazilka: { Diesel: 87.84, Petrol: 97.5 },
+                      Firozabad: { Diesel: 89.69, Petrol: 96.53 },
+                      Firozpur: { Diesel: 88.21, Petrol: 97.89 },
+                      Gadag: { Diesel: 88.2, Petrol: 102.25 },
+                      Gadchiroli: { Diesel: 93.36, Petrol: 106.82 },
+                      Gajapati: { Diesel: 97.13, Petrol: 105.66 },
+                      Ganderbal: { Diesel: 87.25, Petrol: 102.28 },
+                      "Gandhi Nagar": { Diesel: 92.38, Petrol: 96.63 },
+                      Ganganagar: { Diesel: 98.24, Petrol: 113.48 },
+                      Ganjam: { Diesel: 96.17, Petrol: 104.66 },
+                      Garhwa: { Diesel: 97.38, Petrol: 102.58 },
+                      Gariyaband: { Diesel: 96.05, Petrol: 103.08 },
+                      "Gautam Budh Nagar": { Diesel: 90.14, Petrol: 97 },
+                      Gaya: { Diesel: 95.04, Petrol: 108.31 },
+                      Ghaziabad: { Diesel: 89.75, Petrol: 96.58 },
+                      Ghazipur: { Diesel: 90.43, Petrol: 97.25 },
+                      "Gir Somnath": { Diesel: 93.92, Petrol: 98.15 },
+                      Giridih: { Diesel: 94.93, Petrol: 100.13 },
+                      Goalpara: { Diesel: 89.04, Petrol: 97.52 },
+                      Godda: { Diesel: 95.3, Petrol: 100.53 },
+                      Golaghat: { Diesel: 88.71, Petrol: 97.18 },
+                      Gomati: { Diesel: 88.89, Petrol: 99.98 },
+                      Gonda: { Diesel: 89.96, Petrol: 96.76 },
+                      Gondia: { Diesel: 94.32, Petrol: 107.84 },
+                      Gopalganj: { Diesel: 95.46, Petrol: 108.77 },
+                      Gorakhpur: { Diesel: 89.97, Petrol: 96.79 },
+                      "Greater Mumbai": { Diesel: 94.27, Petrol: 106.31 },
+                      Gulbarga: { Diesel: 88.16, Petrol: 102.21 },
+                      Gumla: { Diesel: 95.09, Petrol: 100.28 },
+                      Guna: { Diesel: 94.75, Petrol: 109.59 },
+                      Guntur: { Diesel: 99.62, Petrol: 111.88 },
+                      Gurdaspur: { Diesel: 87.78, Petrol: 97.43 },
+                      Gurgaon: { Diesel: 89.76, Petrol: 96.89 },
+                      Gwalior: { Diesel: 93.84, Petrol: 108.58 },
+                      Hailakandi: { Diesel: 89.19, Petrol: 97.63 },
+                      Hamirpur: { Diesel: 84.9, Petrol: 95.69 },
+                      Hanumangarh: { Diesel: 97.39, Petrol: 112.54 },
+                      Hapur: { Diesel: 89.65, Petrol: 96.48 },
+                      Harda: { Diesel: 94.37, Petrol: 109.15 },
+                      Hardoi: { Diesel: 90.05, Petrol: 96.87 },
+                      Haridwar: { Diesel: 89.54, Petrol: 94.42 },
+                      Hassan: { Diesel: 87.9, Petrol: 102.05 },
+                      Hathras: { Diesel: 89.63, Petrol: 96.48 },
+                      Haveri: { Diesel: 88.77, Petrol: 102.89 },
+                      Hazaribagh: { Diesel: 95.3, Petrol: 100.5 },
+                      Hingoli: { Diesel: 94.41, Petrol: 107.93 },
+                      Hisar: { Diesel: 90.46, Petrol: 97.63 },
+                      Hojai: { Diesel: 89.44, Petrol: 97.9 },
+                      Hooghly: { Diesel: 93.22, Petrol: 106.52 },
+                      Hoshangabad: { Diesel: 94.42, Petrol: 109.2 },
+                      Hoshiarpur: { Diesel: 87.57, Petrol: 97.21 },
+                      Howrah: { Diesel: 92.76, Petrol: 106.03 },
+                      Hyderabad: { Diesel: 97.82, Petrol: 109.66 },
+                      Idukki: { Diesel: 98.03, Petrol: 109.28 },
+                      Indore: { Diesel: 93.86, Petrol: 108.58 },
+                      Jabalpur: { Diesel: 93.93, Petrol: 108.66 },
+                      Jagatsinghpur: { Diesel: 94.28, Petrol: 102.71 },
+                      Jagitial: { Diesel: 98.53, Petrol: 110.43 },
+                      Jahanabad: { Diesel: 94.51, Petrol: 107.74 },
+                      Jahbua: { Diesel: 94.26, Petrol: 109.02 },
+                      Jaipur: { Diesel: 93.72, Petrol: 108.48 },
+                      Jaisalmer: { Diesel: 95.86, Petrol: 110.83 },
+                      Jajpur: { Diesel: 94.96, Petrol: 103.42 },
+                      Jalandhar: { Diesel: 87.68, Petrol: 97.32 },
+                      Jalaun: { Diesel: 90.44, Petrol: 97.29 },
+                      Jalgaon: { Diesel: 92.7, Petrol: 106.17 },
+                      Jalna: { Diesel: 94.73, Petrol: 108.3 },
+                      Jalor: { Diesel: 96.06, Petrol: 111.06 },
+                      Jalpaiguri: { Diesel: 92.48, Petrol: 105.73 },
+                      Jammu: { Diesel: 83.35, Petrol: 97.6 },
+                      Jamnagar: { Diesel: 91.78, Petrol: 96.04 },
+                      Jamtara: { Diesel: 95.19, Petrol: 100.41 },
+                      Jamui: { Diesel: 94.93, Petrol: 108.21 },
+                      Jangaon: { Diesel: 97.45, Petrol: 109.27 },
+                      Janjgir: { Diesel: 95.72, Petrol: 102.74 },
+                      Jashpur: { Diesel: 96.98, Petrol: 104.02 },
+                      Jaunpur: { Diesel: 90.97, Petrol: 97.8 },
+                      "Jayashankar Bhupalpa": { Diesel: 97.73, Petrol: 109.57 },
+                      Jhajjar: { Diesel: 89.71, Petrol: 96.84 },
+                      Jhalawar: { Diesel: 94.8, Petrol: 109.69 },
+                      Jhansi: { Diesel: 89.9, Petrol: 96.73 },
+                      Jhargram: { Diesel: 93.53, Petrol: 106.89 },
+                      Jharsuguda: { Diesel: 94.89, Petrol: 103.31 },
+                      Jhunjhunun: { Diesel: 95.03, Petrol: 109.93 },
+                      Jind: { Diesel: 90.02, Petrol: 97.17 },
+                      Jiribam: { Diesel: 88.96, Petrol: 103.21 },
+                      Jodhpur: { Diesel: 94.98, Petrol: 109.86 },
+                      "Jogulamba Gadwal": { Diesel: 99.55, Petrol: 111.51 },
+                      Jorhat: { Diesel: 89.01, Petrol: 97.49 },
+                      Junagadh: { Diesel: 93.5, Petrol: 97.73 },
+                      Kaimur: { Diesel: 95.65, Petrol: 108.97 },
+                      Kaithal: { Diesel: 89.66, Petrol: 96.8 },
+                      Kakching: { Diesel: 87.41, Petrol: 101.49 },
+                      Kalahandi: { Diesel: 97.25, Petrol: 105.75 },
+                      Kalimpong: { Diesel: 92.71, Petrol: 105.98 },
+                      Kamareddy: { Diesel: 98.95, Petrol: 110.88 },
+                      Kamrup: { Diesel: 88.68, Petrol: 97.15 },
+                      "Kamrup Metro": { Diesel: 88.56, Petrol: 97.02 },
+                      Kanchipuram: { Diesel: 94.41, Petrol: 102.81 },
+                      Kandhamal: { Diesel: 96.41, Petrol: 104.91 },
+                      Kangpokpi: { Diesel: 87.46, Petrol: 101.55 },
+                      Kangra: { Diesel: 84.52, Petrol: 95.27 },
+                      Kanker: { Diesel: 96.89, Petrol: 103.92 },
+                      Kanniyakumari: { Diesel: 95.24, Petrol: 103.6 },
+                      Kannuaj: { Diesel: 90.57, Petrol: 97.41 },
+                      Kannur: { Diesel: 96.93, Petrol: 108 },
+                      "Kanpur Rural": { Diesel: 89.6, Petrol: 96.41 },
+                      "Kanpur Urban": { Diesel: 89.81, Petrol: 96.63 },
+                      Kapurthala: { Diesel: 87.41, Petrol: 97.04 },
+                      Karaikal: { Diesel: 86.12, Petrol: 95.89 },
+                      Karauli: { Diesel: 93.74, Petrol: 108.53 },
+                      "Karbi Anglong": { Diesel: 89.63, Petrol: 98.1 },
+                      "Karim Nagar": { Diesel: 97.92, Petrol: 109.78 },
+                      Karimganj: { Diesel: 89.74, Petrol: 98.19 },
+                      Karnal: { Diesel: 89.34, Petrol: 96.48 },
+                      Karur: { Diesel: 94.55, Petrol: 102.92 },
+                      Kasaragod: { Diesel: 97.29, Petrol: 108.39 },
+                      "Kashi Ram Nagar": { Diesel: 90.07, Petrol: 96.91 },
+                      Kathua: { Diesel: 83.92, Petrol: 98.21 },
+                      Katihar: { Diesel: 95.38, Petrol: 108.7 },
+                      Katni: { Diesel: 94.88, Petrol: 109.7 },
+                      Kaushambi: { Diesel: 89.96, Petrol: 96.76 },
+                      Kawardha: { Diesel: 96.37, Petrol: 103.41 },
+                      Kendrapara: { Diesel: 94.66, Petrol: 103.11 },
+                      Keonjhar: { Diesel: 96.67, Petrol: 105.2 },
+                      Khagaria: { Diesel: 94.34, Petrol: 107.59 },
+                      Khammam: { Diesel: 98.4, Petrol: 110.3 },
+                      Khandwa: { Diesel: 95.06, Petrol: 109.89 },
+                      Khargone: { Diesel: 94.47, Petrol: 109.24 },
+                      Kheda: { Diesel: 91.96, Petrol: 96.22 },
+                      Khordha: { Diesel: 94.76, Petrol: 103.19 },
+                      Khowai: { Diesel: 88.03, Petrol: 99.06 },
+                      Khunti: { Diesel: 94.72, Petrol: 99.91 },
+                      Kinnaur: { Diesel: 88.11, Petrol: 99.44 },
+                      Kiphere: { Diesel: 89.76, Petrol: 101.77 },
+                      Kishanganj: { Diesel: 95.99, Petrol: 109.35 },
+                      Kishtwar: { Diesel: 86.24, Petrol: 101.09 },
+                      Kodagu: { Diesel: 88.9, Petrol: 103.19 },
+                      Koderma: { Diesel: 95.42, Petrol: 100.64 },
+                      Kohima: { Diesel: 87.56, Petrol: 99.45 },
+                      Kokrajhar: { Diesel: 89.1, Petrol: 97.57 },
+                      Kolar: { Diesel: 87.83, Petrol: 101.87 },
+                      Kolasib: { Diesel: 81.23, Petrol: 94.62 },
+                      Kolhapur: { Diesel: 93.01, Petrol: 106.47 },
+                      Kolkata: { Diesel: 92.76, Petrol: 106.03 },
+                      Kollam: { Diesel: 97.95, Petrol: 109.11 },
+                      "Komram Bheem Asifaba": { Diesel: 99.48, Petrol: 111.45 },
+                      Kondagaon: { Diesel: 97.4, Petrol: 104.45 },
+                      Koppal: { Diesel: 89.08, Petrol: 103.21 },
+                      Koraput: { Diesel: 99.21, Petrol: 107.79 },
+                      Korba: { Diesel: 95.17, Petrol: 102.18 },
+                      Koria: { Diesel: 96.11, Petrol: 103.13 },
+                      Kota: { Diesel: 93.84, Petrol: 108.62 },
+                      Kottayam: { Diesel: 97, Petrol: 108.1 },
+                      Kozhikode: { Diesel: 97.2, Petrol: 108.28 },
+                      Krishna: { Diesel: 99.16, Petrol: 111.38 },
+                      Krishnagiri: { Diesel: 95.83, Petrol: 104.23 },
+                      Kulgam: { Diesel: 86.4, Petrol: 101.26 },
+                      Kullu: { Diesel: 86.06, Petrol: 97 },
+                      Kupwara: { Diesel: 87.59, Petrol: 102.65 },
+                      Kurnool: { Diesel: 99.76, Petrol: 112.03 },
+                      Kurukshetra: { Diesel: 89.84, Petrol: 96.99 },
+                      Kushinagar: { Diesel: 89.63, Petrol: 96.44 },
+                      Kutch: { Diesel: 92.33, Petrol: 96.59 },
+                      "Lahul & Spiti": { Diesel: 87.9, Petrol: 99.18 },
+                      Lakhimpur: { Diesel: 90.28, Petrol: 98.77 },
+                      Lalitpur: { Diesel: 90.22, Petrol: 97.06 },
+                      Latehar: { Diesel: 95.68, Petrol: 100.87 },
+                      Latur: { Diesel: 93.69, Petrol: 107.19 },
+                      Lawngtlai: { Diesel: 84.03, Petrol: 97.77 },
+                      Lohardaga: { Diesel: 95.53, Petrol: 100.72 },
+                      Lohit: { Diesel: 84.66, Petrol: 95.39 },
+                      Longding: { Diesel: 84.35, Petrol: 95.06 },
+                      Longleng: { Diesel: 88.94, Petrol: 100.76 },
+                      "Lower Dibang Valley": { Diesel: 84.8, Petrol: 95.6 },
+                      "Lower Subansiri": { Diesel: 82.4, Petrol: 93.03 },
+                      Luckeesarai: { Diesel: 94.76, Petrol: 108.04 },
+                      Lucknow: { Diesel: 89.81, Petrol: 96.62 },
+                      Ludhiana: { Diesel: 87.8, Petrol: 97.45 },
+                      Lunglei: { Diesel: 83.44, Petrol: 97.14 },
+                      Madhepura: { Diesel: 94.89, Petrol: 108.17 },
+                      Madhubani: { Diesel: 95.32, Petrol: 108.63 },
+                      Madurai: { Diesel: 94.98, Petrol: 103.35 },
+                      Mahabubabad: { Diesel: 97.72, Petrol: 109.56 },
+                      Maharajganj: { Diesel: 90.42, Petrol: 97.25 },
+                      Mahasamund: { Diesel: 96.69, Petrol: 103.73 },
+                      Mahe: { Diesel: 83.72, Petrol: 93.8 },
+                      Mahendragarh: { Diesel: 89.95, Petrol: 97.08 },
+                      Mahisagar: { Diesel: 92.9, Petrol: 97.16 },
+                      Mahoba: { Diesel: 90.63, Petrol: 97.48 },
+                      Mainpuri: { Diesel: 90.23, Petrol: 97.08 },
+                      Majuli: { Diesel: 90.78, Petrol: 99.3 },
+                      Malappuram: { Diesel: 97.75, Petrol: 108.9 },
+                      Malda: { Diesel: 92.7, Petrol: 105.96 },
+                      Malkangiri: { Diesel: 100.29, Petrol: 108.92 },
+                      Mamit: { Diesel: 82.42, Petrol: 96.02 },
+                      Mancherial: { Diesel: 98.74, Petrol: 110.65 },
+                      Mandi: { Diesel: 85.38, Petrol: 96.2 },
+                      Mandla: { Diesel: 95.27, Petrol: 110.12 },
+                      Mandsaur: { Diesel: 94.93, Petrol: 109.75 },
+                      Mandya: { Diesel: 88.1, Petrol: 102.17 },
+                      Mansa: { Diesel: 87.57, Petrol: 97.21 },
+                      Mathura: { Diesel: 89.33, Petrol: 96.17 },
+                      Maunathbhanjan: { Diesel: 90.57, Petrol: 97.4 },
+                      Mayurbhanj: { Diesel: 95.6, Petrol: 104.05 },
+                      Medak: { Diesel: 98.24, Petrol: 110.1 },
+                      "Medchal Malkajgiri": { Diesel: 97.82, Petrol: 109.66 },
+                      Meerut: { Diesel: 89.64, Petrol: 96.46 },
+                      Mehabubnagar: { Diesel: 98.7, Petrol: 110.6 },
+                      Mehsana: { Diesel: 92.17, Petrol: 96.4 },
+                      Mewat: { Diesel: 89.81, Petrol: 96.94 },
+                      Mirzapur: { Diesel: 90.63, Petrol: 97.45 },
+                      Moga: { Diesel: 88.2, Petrol: 97.87 },
+                      Mokokchung: { Diesel: 88.99, Petrol: 101.02 },
+                      Mon: { Diesel: 88.75, Petrol: 100.62 },
+                      Moradabad: { Diesel: 90.01, Petrol: 96.83 },
+                      Morbi: { Diesel: 92.54, Petrol: 96.77 },
+                      Morena: { Diesel: 94.27, Petrol: 109.04 },
+                      Morigaon: { Diesel: 89.11, Petrol: 97.59 },
+                      Muktsar: { Diesel: 87.48, Petrol: 97.13 },
+                      Mulugu: { Diesel: 97.47, Petrol: 109.29 },
+                      "Mumbai City": { Diesel: 94.27, Petrol: 106.31 },
+                      Mungeli: { Diesel: 96.18, Petrol: 103.2 },
+                      Munger: { Diesel: 94.23, Petrol: 107.47 },
+                      Murshidabad: { Diesel: 92.92, Petrol: 106.2 },
+                      Muzaffarnagar: { Diesel: 89.81, Petrol: 96.63 },
+                      Muzaffarpur: { Diesel: 94.79, Petrol: 108.07 },
+                      Mysore: { Diesel: 87.49, Petrol: 101.5 },
+                      Nabarangapur: { Diesel: 99.53, Petrol: 108.13 },
+                      Nadia: { Diesel: 93.78, Petrol: 107.12 },
+                      Nagaon: { Diesel: 89.77, Petrol: 98.26 },
+                      Nagapattinam: { Diesel: 95.79, Petrol: 104.18 },
+                      Nagarkurnool: { Diesel: 98.53, Petrol: 110.41 },
+                      Nagaur: { Diesel: 93.99, Petrol: 108.78 },
+                      Nagpur: { Diesel: 92.59, Petrol: 106.04 },
+                      Nainital: { Diesel: 89.97, Petrol: 94.85 },
+                      Nalanda: { Diesel: 94.42, Petrol: 107.65 },
+                      Nalbari: { Diesel: 89.18, Petrol: 97.66 },
+                      Nalgonda: { Diesel: 98.22, Petrol: 110.11 },
+                      Namakkal: { Diesel: 94.7, Petrol: 103.07 },
+                      Namsai: { Diesel: 84.42, Petrol: 95.13 },
+                      Nanded: { Diesel: 94.78, Petrol: 108.32 },
+                      Nandurbar: { Diesel: 93.49, Petrol: 106.99 },
+                      Narayanpet: { Diesel: 99.51, Petrol: 111.47 },
+                      Narmada: { Diesel: 92.73, Petrol: 96.99 },
+                      Narsimhapur: { Diesel: 94.21, Petrol: 108.96 },
+                      Nashik: { Diesel: 92.42, Petrol: 105.89 },
+                      Navsari: { Diesel: 92.3, Petrol: 96.54 },
+                      Nawada: { Diesel: 94.97, Petrol: 108.24 },
+                      Nayagarh: { Diesel: 95.03, Petrol: 103.47 },
+                      Noida: { Diesel: 90.08, Petrol: 96.92 },
+                      Neemach: { Diesel: 95.15, Petrol: 110 },
+                      Nellore: { Diesel: 99.91, Petrol: 112.24 },
+                      "New Delhi": { Diesel: 89.62, Petrol: 96.72 },
+                      Nicobar: { Diesel: 79.74, Petrol: 84.1 },
+                      Nilgiris: { Diesel: 96.37, Petrol: 104.96 },
+                      Nirmal: { Diesel: 99.4, Petrol: 111.36 },
+                      Nizamabad: { Diesel: 99.31, Petrol: 111.27 },
+                      Noney: { Diesel: 87.51, Petrol: 101.61 },
+                      "North 24 Parganas": { Diesel: 93.29, Petrol: 106.59 },
+                      "North And Middle Andaman": {
+                        Diesel: 79.74,
+                        Petrol: 84.1,
+                      },
+                      "North Delhi": { Diesel: 89.62, Petrol: 96.72 },
+                      "North District": { Diesel: 89.9, Petrol: 102.85 },
+                      "North East Delhi": { Diesel: 89.62, Petrol: 96.72 },
+                      "North Garo Hills": { Diesel: 84.19, Petrol: 95.67 },
+                      "North Goa": { Diesel: 90.29, Petrol: 97.75 },
+                      "North Tripura": { Diesel: 87.42, Petrol: 98.4 },
+                      "North West Delhi": { Diesel: 89.62, Petrol: 96.72 },
+                      Nuaparha: { Diesel: 97.17, Petrol: 105.68 },
+                      Osmanabad: { Diesel: 93.84, Petrol: 107.35 },
+                      Pakur: { Diesel: 95.97, Petrol: 101.2 },
+                      Palakkad: { Diesel: 97.95, Petrol: 109.11 },
+                      Palamau: { Diesel: 97.54, Petrol: 102.75 },
+                      Palghar: { Diesel: 92.55, Petrol: 106.06 },
+                      Pali: { Diesel: 93.78, Petrol: 108.54 },
+                      Palwal: { Diesel: 90.3, Petrol: 97.44 },
+                      "Panch Mahal": { Diesel: 92.18, Petrol: 96.44 },
+                      Panchkula: { Diesel: 90.67, Petrol: 97.84 },
+                      Panipat: { Diesel: 89.53, Petrol: 96.67 },
+                      Panna: { Diesel: 95.48, Petrol: 110.38 },
+                      Papumpare: { Diesel: 82.27, Petrol: 92.83 },
+                      Parbhani: { Diesel: 95.21, Petrol: 108.79 },
+                      "Paschim Bardhaman": { Diesel: 92.61, Petrol: 105.86 },
+                      "Paschim Medinipur": { Diesel: 93.33, Petrol: 106.67 },
+                      Patan: { Diesel: 92.22, Petrol: 96.46 },
+                      Pathananthitta: { Diesel: 97.67, Petrol: 108.81 },
+                      Pathankot: { Diesel: 88.45, Petrol: 98.12 },
+                      Patiala: { Diesel: 87.52, Petrol: 97.17 },
+                      Patna: { Diesel: 94.04, Petrol: 107.24 },
+                      Pauri: { Diesel: 90.38, Petrol: 95.29 },
+                      Peddapalli: { Diesel: 98.44, Petrol: 110.34 },
+                      Perambalur: { Diesel: 95.01, Petrol: 103.38 },
+                      Peren: { Diesel: 86.99, Petrol: 98.65 },
+                      Phek: { Diesel: 89.1, Petrol: 101.14 },
+                      Pherzawl: { Diesel: 88.78, Petrol: 103.02 },
+                      Pilibhit: { Diesel: 90.31, Petrol: 97.15 },
+                      Pithoragarh: { Diesel: 92.75, Petrol: 97.96 },
+                      Pondicherry: { Diesel: 86.33, Petrol: 96.16 },
+                      Poonch: { Diesel: 85.83, Petrol: 100.6 },
+                      Porbander: { Diesel: 92.52, Petrol: 96.77 },
+                      Prakasam: { Diesel: 99.75, Petrol: 112.05 },
+                      Pratapgarh: { Diesel: 94.21, Petrol: 109.01 },
+                      Pudukkottai: { Diesel: 95.3, Petrol: 103.68 },
+                      Pulwama: { Diesel: 86.91, Petrol: 101.92 },
+                      Pune: { Diesel: 92.3, Petrol: 105.77 },
+                      "Purba Bardhaman": { Diesel: 93.1, Petrol: 106.39 },
+                      "Purba Medinipur": { Diesel: 92.75, Petrol: 106.05 },
+                      Puri: { Diesel: 95.16, Petrol: 103.61 },
+                      Purnia: { Diesel: 95.39, Petrol: 108.71 },
+                      Purulia: { Diesel: 93.53, Petrol: 106.85 },
+                      "Rae Bareli": { Diesel: 89.87, Petrol: 96.68 },
+                      Raichur: { Diesel: 88.59, Petrol: 102.67 },
+                      Raigarh: { Diesel: 95.73, Petrol: 102.75 },
+                      Raipur: { Diesel: 95.44, Petrol: 102.45 },
+                      Raisen: { Diesel: 94.08, Petrol: 108.84 },
+                      "Rajanna Sircilla": { Diesel: 98.3, Petrol: 110.18 },
+                      Rajgarh: { Diesel: 94.71, Petrol: 109.53 },
+                      Rajkot: { Diesel: 91.94, Petrol: 96.18 },
+                      Rajnandgaon: { Diesel: 95.84, Petrol: 102.86 },
+                      Rajouri: { Diesel: 84.74, Petrol: 99.18 },
+                      Rajsamand: { Diesel: 94.35, Petrol: 109.17 },
+                      Ramanagara: { Diesel: 88.29, Petrol: 102.39 },
+                      Ramanathapuram: { Diesel: 95.41, Petrol: 103.78 },
+                      Ramban: { Diesel: 85.17, Petrol: 99.84 },
+                      Ramgarh: { Diesel: 95.19, Petrol: 100.38 },
+                      Rampur: { Diesel: 90.26, Petrol: 97.09 },
+                      Ranchi: { Diesel: 94.65, Petrol: 99.84 },
+                      Rangareddi: { Diesel: 97.82, Petrol: 109.66 },
+                      Ratlam: { Diesel: 93.77, Petrol: 108.49 },
+                      Ratnagiri: { Diesel: 93.87, Petrol: 107.43 },
+                      Rayagada: { Diesel: 98.43, Petrol: 107.01 },
+                      Reasi: { Diesel: 84.48, Petrol: 99.1 },
+                      Rewa: { Diesel: 96.06, Petrol: 110.98 },
+                      Rewari: { Diesel: 89.48, Petrol: 96.6 },
+                      "Ri Bhoi": { Diesel: 84.18, Petrol: 95.82 },
+                      Rohtak: { Diesel: 90.13, Petrol: 97.26 },
+                      Rohtas: { Diesel: 95.23, Petrol: 108.52 },
+                      Rudraprayag: { Diesel: 92.18, Petrol: 97.28 },
+                      Rupnagar: { Diesel: 88.21, Petrol: 97.88 },
+                      "Sabar Kantha": { Diesel: 92.84, Petrol: 97.1 },
+                      Sagar: { Diesel: 93.74, Petrol: 108.48 },
+                      Saharanpur: { Diesel: 90.24, Petrol: 97.07 },
+                      Saharsa: { Diesel: 94.79, Petrol: 108.07 },
+                      Sahibganj: { Diesel: 95.96, Petrol: 101.19 },
+                      Saiha: { Diesel: 84.75, Petrol: 98.61 },
+                      Salem: { Diesel: 95.15, Petrol: 103.54 },
+                      Samastipur: { Diesel: 94.15, Petrol: 107.39 },
+                      Samba: { Diesel: 83.26, Petrol: 97.5 },
+                      Sambalpur: { Diesel: 95.41, Petrol: 103.85 },
+                      Sambhal: { Diesel: 89.99, Petrol: 96.81 },
+                      Sangareddy: { Diesel: 98.6, Petrol: 110.49 },
+                      Sangli: { Diesel: 92.95, Petrol: 106.41 },
+                      Sangrur: { Diesel: 87.4, Petrol: 97.04 },
+                      "Sant Kabir Nagar": { Diesel: 90.24, Petrol: 97.07 },
+                      "Sant Ravi Nagar": { Diesel: 90.49, Petrol: 97.31 },
+                      "Saraikela Kharasawan": { Diesel: 94.58, Petrol: 99.78 },
+                      Saran: { Diesel: 94.71, Petrol: 107.97 },
+                      "Sas Nagar": { Diesel: 88.3, Petrol: 97.98 },
+                      Satara: { Diesel: 93.88, Petrol: 107.42 },
+                      Satna: { Diesel: 95.98, Petrol: 110.9 },
+                      Sawaimadhopur: { Diesel: 94.74, Petrol: 109.63 },
+                      Sehore: { Diesel: 94.1, Petrol: 108.87 },
+                      Senapati: { Diesel: 88, Petrol: 102.16 },
+                      Seoni: { Diesel: 95.56, Petrol: 110.44 },
+                      Sepahijhala: { Diesel: 88.71, Petrol: 99.79 },
+                      Serchhip: { Diesel: 82.86, Petrol: 96.49 },
+                      Sewan: { Diesel: 95.17, Petrol: 108.46 },
+                      Shahdol: { Diesel: 96.37, Petrol: 111.32 },
+                      Shahjahanpur: { Diesel: 89.72, Petrol: 96.53 },
+                      Shajapur: { Diesel: 94.47, Petrol: 109.27 },
+                      Shamli: { Diesel: 89.97, Petrol: 96.8 },
+                      "Shd Bhagat Singh Ngr": { Diesel: 87.99, Petrol: 97.64 },
+                      Sheikhpura: { Diesel: 95.27, Petrol: 108.56 },
+                      Sheohar: { Diesel: 95.25, Petrol: 108.56 },
+                      Sheopur: { Diesel: 96.06, Petrol: 111 },
+                      Shimla: { Diesel: 86.3, Petrol: 97.24 },
+                      Shimoga: { Diesel: 88.45, Petrol: 102.62 },
+                      Shivpuri: { Diesel: 95.18, Petrol: 110.04 },
+                      Shopian: { Diesel: 86.59, Petrol: 101.55 },
+                      Shravasti: { Diesel: 90.19, Petrol: 96.99 },
+                      Sibsagar: { Diesel: 89.75, Petrol: 98.24 },
+                      Siddipet: { Diesel: 97.63, Petrol: 109.47 },
+                      Sidharthnagar: { Diesel: 90.86, Petrol: 97.7 },
+                      Sidhi: { Diesel: 95.51, Petrol: 110.35 },
+                      Sikar: { Diesel: 94.27, Petrol: 109.09 },
+                      Silvassa: { Diesel: 89.98, Petrol: 94.43 },
+                      Simdega: { Diesel: 95.62, Petrol: 100.81 },
+                      Sindhudurg: { Diesel: 94.34, Petrol: 107.86 },
+                      Singrauli: { Diesel: 94.03, Petrol: 108.74 },
+                      Sirmaur: { Diesel: 85.9, Petrol: 96.7 },
+                      Sirohi: { Diesel: 94.94, Petrol: 109.82 },
+                      Sirsa: { Diesel: 90.89, Petrol: 98.07 },
+                      Sitamarhi: { Diesel: 95.14, Petrol: 108.44 },
+                      Sitapur: { Diesel: 90.4, Petrol: 97.23 },
+                      Sivaganga: { Diesel: 95.2, Petrol: 103.57 },
+                      Solan: { Diesel: 84.56, Petrol: 95.26 },
+                      Solapur: { Diesel: 93.49, Petrol: 106.99 },
+                      Sonapur: { Diesel: 96.21, Petrol: 104.68 },
+                      Sonbhadra: { Diesel: 90.7, Petrol: 97.52 },
+                      Sonipat: { Diesel: 89.74, Petrol: 96.88 },
+                      Sonitpur: { Diesel: 88.75, Petrol: 97.2 },
+                      "South 24 Parganas": { Diesel: 92.76, Petrol: 106.03 },
+                      "South Andaman": { Diesel: 79.74, Petrol: 84.1 },
+                      "South Delhi": { Diesel: 89.62, Petrol: 96.72 },
+                      "South District": { Diesel: 89.9, Petrol: 102.85 },
+                      "South East Delhi": { Diesel: 89.62, Petrol: 96.72 },
+                      "South Garo Hills": { Diesel: 85.25, Petrol: 96.74 },
+                      "South Goa": { Diesel: 89.68, Petrol: 97.11 },
+                      "South Tripura": { Diesel: 89.27, Petrol: 100.38 },
+                      "South West Delhi": { Diesel: 89.62, Petrol: 96.72 },
+                      "Southwest Khasi Hils": { Diesel: 85.38, Petrol: 96.87 },
+                      Srikakulam: { Diesel: 99.53, Petrol: 111.84 },
+                      Srinagar: { Diesel: 86.97, Petrol: 101.98 },
+                      Sukma: { Diesel: 99.17, Petrol: 106.25 },
+                      Sultanpur: { Diesel: 91.14, Petrol: 97.98 },
+                      Sundargarh: { Diesel: 96.31, Petrol: 104.78 },
+                      Supaul: { Diesel: 95.55, Petrol: 108.88 },
+                      Surajpur: { Diesel: 96.67, Petrol: 103.7 },
+                      Surat: { Diesel: 92.4, Petrol: 96.63 },
+                      Surendranagar: { Diesel: 92.92, Petrol: 97.15 },
+                      Surguja: { Diesel: 96.57, Petrol: 103.59 },
+                      Suryapet: { Diesel: 97.22, Petrol: 109.04 },
+                      Tamenglong: { Diesel: 88.42, Petrol: 102.62 },
+                      Tapi: { Diesel: 92.75, Petrol: 96.99 },
+                      "Tarn Taran": { Diesel: 88.09, Petrol: 97.75 },
+                      Tawang: { Diesel: 86.91, Petrol: 98.26 },
+                      "Tehri Garhwal": { Diesel: 91.38, Petrol: 96.45 },
+                      Tengnoupal: { Diesel: 87.97, Petrol: 102.12 },
+                      Teni: { Diesel: 95.41, Petrol: 103.79 },
+                      Thane: { Diesel: 92.47, Petrol: 105.97 },
+                      Thanjavur: { Diesel: 94.88, Petrol: 103.25 },
+                      "The Dangs": { Diesel: 93.01, Petrol: 97.25 },
+                      Thiruvananthapuram: { Diesel: 98.53, Petrol: 109.73 },
+                      Thiruvarur: { Diesel: 95.42, Petrol: 103.8 },
+                      Thoubal: { Diesel: 87.29, Petrol: 101.37 },
+                      Thrissur: { Diesel: 97.09, Petrol: 108.2 },
+                      Tikamgarh: { Diesel: 94.64, Petrol: 109.47 },
+                      Tinsukia: { Diesel: 88.51, Petrol: 96.98 },
+                      Tirap: { Diesel: 84.52, Petrol: 95.34 },
+                      Tiruchchirappalli: { Diesel: 95.04, Petrol: 103.41 },
+                      Tirunelveli: { Diesel: 94.6, Petrol: 102.95 },
+                      Tirupur: { Diesel: 94.78, Petrol: 103.17 },
+                      Tiruvallur: { Diesel: 94.4, Petrol: 102.81 },
+                      Tiruvannamalai: { Diesel: 95.12, Petrol: 103.54 },
+                      Tonk: { Diesel: 94.05, Petrol: 108.86 },
+                      Tuensang: { Diesel: 89.91, Petrol: 102.04 },
+                      Tumkur: { Diesel: 88.36, Petrol: 102.45 },
+                      Tuticorin: { Diesel: 94.6, Petrol: 102.97 },
+                      Udaipur: { Diesel: 94.13, Petrol: 108.92 },
+                      Udalguri: { Diesel: 89.25, Petrol: 97.73 },
+                      "Udham Singh Nagar": { Diesel: 89.97, Petrol: 94.85 },
+                      Udhampur: { Diesel: 84.45, Petrol: 99.09 },
+                      Udupi: { Diesel: 87.54, Petrol: 101.59 },
+                      Ujjain: { Diesel: 94.25, Petrol: 109.01 },
+                      Ukhrul: { Diesel: 87.81, Petrol: 101.94 },
+                      Umaria: { Diesel: 95.81, Petrol: 110.71 },
+                      Una: { Diesel: 84.09, Petrol: 94.76 },
+                      Unakoti: { Diesel: 87.09, Petrol: 98.04 },
+                      Unnao: { Diesel: 89.96, Petrol: 96.78 },
+                      "Upper Siang": { Diesel: 85.06, Petrol: 95.83 },
+                      "Upper Sibansiri": { Diesel: 85, Petrol: 95.78 },
+                      "Uttar Dinajpur": { Diesel: 93.23, Petrol: 106.54 },
+                      "Uttar Kannad": { Diesel: 88.76, Petrol: 102.94 },
+                      Uttarkashi: { Diesel: 91.51, Petrol: 96.62 },
+                      Vadodara: { Diesel: 91.82, Petrol: 96.08 },
+                      Vaishali: { Diesel: 94.09, Petrol: 107.3 },
+                      Valsad: { Diesel: 93.15, Petrol: 97.39 },
+                      Varanasi: { Diesel: 90.08, Petrol: 96.89 },
+                      Vellore: { Diesel: 95.52, Petrol: 103.95 },
+                      Vidisha: { Diesel: 93.89, Petrol: 108.66 },
+                      Vikarabad: { Diesel: 98.88, Petrol: 110.79 },
+                      Viluppuram: { Diesel: 95.73, Petrol: 104.17 },
+                      Virudunagar: { Diesel: 95.4, Petrol: 103.76 },
+                      Vishakhapatnam: { Diesel: 98.27, Petrol: 110.48 },
+                      Vizianagaram: { Diesel: 99.57, Petrol: 111.88 },
+                      Wanaparthy: { Diesel: 99.12, Petrol: 111.05 },
+                      Warangal: { Diesel: 97.29, Petrol: 109.1 },
+                      "Warangal Rural": { Diesel: 97.5, Petrol: 109.32 },
+                      Wardha: { Diesel: 93.52, Petrol: 107.01 },
+                      Washim: { Diesel: 93.59, Petrol: 107.07 },
+                      Wayanad: { Diesel: 97.84, Petrol: 109.05 },
+                      "West Champaran": { Diesel: 95.82, Petrol: 109.15 },
+                      "West Delhi": { Diesel: 89.62, Petrol: 96.72 },
+                      "West District": { Diesel: 89.9, Petrol: 102.85 },
+                      "West Garo Hills": { Diesel: 84.86, Petrol: 96.34 },
+                      "West Godavari": { Diesel: 99.36, Petrol: 111.62 },
+                      "West Imphal": { Diesel: 87.13, Petrol: 101.19 },
+                      "West Kameng": { Diesel: 85.33, Petrol: 96.54 },
+                      "West Karbi Anglong": { Diesel: 90, Petrol: 98.48 },
+                      "West Khasi Hills": { Diesel: 85.61, Petrol: 97.34 },
+                      "West Siang": { Diesel: 84.84, Petrol: 95.82 },
+                      "West Singhbhum": { Diesel: 95.92, Petrol: 101.13 },
+                      "West Tripura": { Diesel: 88.44, Petrol: 99.49 },
+                      Wokha: { Diesel: 88.32, Petrol: 100.3 },
+                      "Yadadri Bhuvanagiri": { Diesel: 98, Petrol: 109.87 },
+                      Yadgir: { Diesel: 88.25, Petrol: 102.31 },
+                      Yamunanagar: { Diesel: 90.11, Petrol: 97.26 },
+                      Yanam: { Diesel: 86.59, Petrol: 96.82 },
+                      Yavatmal: { Diesel: 93.8, Petrol: 107.29 },
+                      Zunheboto: { Diesel: 89.18, Petrol: 101.32 },
+                    };
+
+                    // Get the fuel price for the selected city and fuel type
+                    var fuelPrice = fuelPrices[city][fuelType];
+                    if (fuelPrice) {
+                    var fuelConsumption = distance / mileage;
+                    var dailyFuelCost = fuelConsumption * fuelPrice;
+                    var monthlyFuelCost = dailyFuelCost * 30; // Assuming 30 days in a month
+                    var yearlyFuelCost = dailyFuelCost * 365; // Assuming 365 days in a year
+                    var resultDiv = document.getElementById('result');
+                    resultDiv.innerHTML = `
+                        <p>Price of ${fuelType} in ${city}: ₹ ${fuelPrice.toFixed(2)}</p>
+                        <br>
+                        <h2>Estimated Fuel Costs</h2>
+                        <p>Daily: ₹ ${dailyFuelCost.toFixed(2)}</p>
+                        <p>Monthly: ₹ ${monthlyFuelCost.toFixed(2)}</p>
+                        <p>Yearly: ₹ ${yearlyFuelCost.toFixed(2)}</p>
+                        <p>Price of ${fuelType} in ${city}: ₹ ${fuelPrice.toFixed(2)}</p>
+                    `;
+                    } else {
+                      document.getElementById("result").innerHTML =
+                        "Fuel price data not available for selected city";
+                    }
+                  });
+              </script>
+            </div>
+          </div>
+        </div><div class="home-services">
+          <div class="home-header2">
+            <h2 class="heading">WHAT MAKES US DIFFERENT?</h2>
+          </div>
+          <div class="home-grid">
+            <div class="service-service service-root-class-name">
+              <h3 class="service-title"><span>ML Models</span></h3>
+              <span class="service-description">
+                <span>
+                  Provides the best in class models and different ml models and
+                  techniques which are different from the techniques employed by
+                  various organisations, research papers.
+                </span>
+              </span>
+            </div>
+            <div class="service-service service-root-class-name1">
+              <h3 class="service-title"><span>All In One Services</span></h3>
+              <span class="service-description">
+                <span>
+                  Provides all in one services which totally encompassed by a
+                  single organisation.
+                </span>
+              </span>
+            </div>
+            <div class="service-service service-root-class-name5">
+              <h3 class="service-title"><span>In depth Knowledge</span></h3>
+              <span class="service-description">
+                <span>
+                  In depth knowledge based on various research papers and trying
+                  to complete the various goals that hav yet not been achieved
+                  in various research papers.
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <a href="{{ url_for('enterprise') }}"
+      ><img alt="image" src="static/logo_new.jpg" class="home-logo4"
+    /></a>
+        <footer class="home-footer">
+          <div class="home-information">
+            <div class="home-details">
+              <div class="home-header3">
+                <div class="home-branding2">
+                  <span class="home-company2">E-Garage</span>
+                </div>
+                <div class="home-location">
+                  <span class="home-caption">Office</span>
+                  <span class="home-value">
+                    Jaypee Institute Of Information Technology,Sector 128
+                  </span>
+                </div>
+              </div>
+              <div class="home-location1">
+                <span class="home-caption1">Let's talk through</span>
+                <span class="home-value1">sayhello@egarage.in</span>
+                <span class="home-value1">+91 9999912345</span>
+              </div>
+            </div>
+          </div>
+          <img
+            alt="image"
+            src="https://images.unsplash.com/photo-1570071677470-c04398af73ca?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDN8fGdhcmFnZXxlbnwwfHx8fDE3MDg2NDM2Nzh8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+            class="home-image1"
+          />
+        </footer>
+        </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+        <p class="footer-description">
+        <b>
+          Made by Kartik Gupta, Nitin Goyal, Shashwat Singh Chauhan with
+          &#10084;</b
+        >
+        </p>
+        </div>
+  </body>
+</html>

@@ -1,0 +1,419 @@
+﻿    Car_Make,Car_Model,Year,Engine,Horsepower,Weight,Fuel_Type,Transmission,Drive_Mode,Type_road,Driving_Style,Predicted_Mileage
+Hyundai,Creta,2021,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,14
+Hyundai,Creta,2021,1497,113,1280,Diesel,Automatic,AWD,Highway,Aggressive,12
+Tata,Nexon,2023,1497,108,1305,Diesel,Manual,AWD,Highway,Normal,19
+Hyundai,Alcazar,2024,1497,113,1450,Diesel,Automatic,AWD,City,Normal,12
+Hyundai,Alcazar,2024,1497,113,1450,Diesel,Automatic,AWD,City,Aggressive,10
+Honda,WR-V,2024,1199,88,1114,Petrol,Manual,FWD,City,Normal,11
+Hyundai,Alcazar,2024,1497,113,1450,Diesel,Automatic,AWD,Highway,Normal,19
+Hyundai,Alcazar,2024,1497,113,1450,Diesel,Automatic,AWD,Highway,Aggressive,18
+Tata,Nexon,2024,1497,108,1305,Diesel,Manual,AWD,Highway,Aggressive,15
+Mahindra,Thar,2013,1997,152,1620,Petrol,Manual,4WD,City,Aggressive,8
+Honda,Jazz,2013,1199,88,1050,Petrol,CVT,FWD,City,Aggressive,11
+Hyundai,Grand i10 Nios,2013,998,67,915,Petrol,Manual,FWD,City,Normal,12
+Honda,Brio,2013,1198,88,965,Petrol,Manual,FWD,City,Normal,8
+Maruti,Suzuki S-Cross,2013,1462,103,1205,Petrol,Manual,FWD,City,Aggressive,12
+Tata,Aria,2013,2179,138,1910,Diesel,Manual,AWD,City,Normal,12
+Mahindra,E Verito,2013,1461,65,1630,Electric,Automatic,FWD,City,Normal,17
+Maruti,Alto K10,2013,998,67,765,Petrol,Manual,FWD,City,Normal,16
+Hyundai,Eon,2013,814,55,795,Petrol,Manual,FWD,City,Normal,18
+Tata,Nano,2013,624,37,615,Petrol,Manual,RWD,City,Aggressive,21
+Maruti,S-Presso,2013,998,67,726,Petrol,Manual,FWD,City,Aggressive,18
+Mahindra,XUV300,2013,1197,110,1235,Diesel,Manual,FWD,City,Normal,18
+Maruti,Baleno,2013,1197,81,865,Petrol,Manual,FWD,Highway,Normal,20
+Tata,Tigor ,2013,0,74,1125,Petrol,Automatic,FWD,Highway,Normal,20
+Mahindra,Xylo,2013,2179,118,1820,Diesel,Manual,RWD,Highway,Normal,14
+Honda,WR-V,2014,1199,88,1104,Petrol,Manual,FWD,Highway,Normal,21
+Maruti,Eeco,2014,1196,72,928,Petrol,Manual,RWD,Highway,Aggressive,16
+Honda,Brio,2014,1198,88,965,Petrol,Manual,FWD,City,Normal,9
+Maruti,Suzuki S-Cross,2014,1462,103,1205,Petrol,Manual,FWD,City,Aggressive,13
+Tata,Aria,2014,2179,138,1910,Diesel,Manual,AWD,City,Normal,12
+Mahindra,E Verito,2014,1461,65,1630,Electric,Automatic,FWD,City,Normal,18
+Hyundai,Eon,2014,814,55,795,Petrol,Manual,FWD,City,Aggressive,16
+Tata,Nexon,2014,1199,127,1400,Petrol,Automatic,AWD,Highway,Normal,22
+Tata,Nano,2014,624,37,615,Petrol,Manual,RWD,City,Normal,23
+Honda,Jazz,2014,1199,88,1050,Petrol,CVT,FWD,Highway,Normal,17
+Maruti,Wagon R,2014,998,67,805,Petrol,Manual,FWD,City,Normal,18
+Mahindra,E Verito,2014,1461,65,1630,Electric,Automatic,FWD,City,Normal,19
+Honda,City,2014,1498,119,1157,Petrol,CVT,FWD,Highway,Normal,18
+Hyundai,Grand i10 Nios,2014,998,67,915,Petrol,Manual,FWD,Highway,Normal,18
+Hyundai,Venue,2014,998,81,1090,Petrol,Manual,FWD,Highway,Normal,16
+Mahindra,KUV100,2014,1198,82,1065,Petrol,Manual,FWD,Highway,Aggressive,16
+Maruti,Celerio,2014,998,67,830,Petrol,Manual,FWD,Highway,Aggressive,21
+Mahindra,Xylo,2014,2179,118,1820,Diesel,Manual,RWD,Highway,Normal,14
+Hyundai,Venue,2014,998,81,1090,Petrol,Manual,FWD,Highway,Aggressive,15
+Tata,Nexon,2014,1199,127,1400,Petrol,Automatic,AWD,Highway,Normal,21
+Honda,Civic,2014,1799,138,1283,Petrol,CVT,FWD,Highway,Normal,19
+Hyundai,Xcent,2015,1197,82,940,Petrol,Manual,FWD,City,Normal,16
+Mahindra,Thar,2015,1997,152,1620,Petrol,Manual,4WD,City,Normal,11
+Hyundai,Xcent,2015,1197,81,940,Petrol,Manual,FWD,City,Aggressive,15
+Maruti,Swift,2015,1197,82,870,Petrol,Manual,FWD,City,Aggressive,17
+Tata,Safari,2015,1956,168,1825,Diesel,Automatic,AWD,City,Aggressive,9
+Maruti,Suzuki S-Cross,2015,1462,103,1205,Petrol,Manual,FWD,City,Aggressive,14
+Tata,Aria,2015,2179,138,1910,Diesel,Manual,AWD,City,Aggressive,10
+Honda,Accord,2015,1993,187,1610,Petrol,Automatic,FWD,City,Normal,10
+Maruti,Alto K10,2015,998,67,765,Petrol,Manual,FWD,City,Aggressive,14
+Tata,Nexon,2015,1199,127,1400,Petrol,Automatic,AWD,Highway,Normal,22
+Honda,Brio,2015,1198,88,965,Petrol,Manual,FWD,City,Normal,10
+Maruti,S-Presso,2015,998,67,726,Petrol,Manual,FWD,City,Normal,21
+Tata,Safari,2015,1956,140,1890,Diesel,Manual,AWD,City,Normal,11
+Mahindra,Thar,2015,1997,152,1620,Petrol,Manual,4WD,City,Aggressive,8
+Honda,City,2015,1498,119,1157,Petrol,CVT,FWD,Highway,Normal,17
+Mahindra,KUV100,2015,1198,82,1065,Petrol,Manual,FWD,Highway,Aggressive,16
+Tata,Nano,2015,624,37,615,Petrol,Manual,RWD,Highway,Aggressive,27
+Maruti,Celerio,2015,998,67,830,Petrol,Manual,FWD,Highway,Aggressive,21
+Mahindra,Xylo,2015,2179,118,1820,Diesel,Manual,RWD,Highway,Normal,14
+Hyundai,Elite i20,2015,1197,81,1032,Petrol,Manual,FWD,Highway,Aggressive,17
+Maruti,Baleno,2015,1197,81,865,Petrol,Manual,FWD,Highway,Normal,19
+Honda,Jazz,2016,1199,88,1050,Petrol,CVT,FWD,Highway,Aggressive,14
+Tata,Zest,2016,1193,88,1065,Diesel,Manual,FWD,City,Aggressive,15
+Mahindra,Thar,2016,1997,152,1620,Petrol,Manual,4WD,City,Aggressive,8
+Tata,Aria,2016,2179,138,1910,Diesel,Manual,AWD,City,Normal,11
+Honda,Accord,2016,1993,187,1610,Petrol,Automatic,FWD,City,Normal,10
+Tata,Zest,2016,1193,88,1065,Diesel,Manual,FWD,City,Normal,19
+Maruti,Alto K10,2016,998,67,765,Petrol,Manual,FWD,City,Normal,16
+Honda,Jazz,2016,1199,88,1050,Petrol,CVT,FWD,Highway,Normal,18
+Mahindra,Scorpio,2016,2179,140,1825,Diesel,Manual,RWD,Highway,Normal,14
+Maruti,IGNIS,2016,1197,82,865,Petrol,Manual,FWD,Highway,Normal,19
+Hyundai,Xcent,2016,1197,81,940,Petrol,Manual,FWD,Highway,Normal,21
+Tata,Tiago,2016,1199,84,935,Petrol,Manual,FWD,Highway,Aggressive,19
+Hyundai,Eon,2016,814,55,795,Petrol,Manual,FWD,Highway,Normal,22
+Mahindra,KUV100,2016,1198,82,1065,Petrol,Manual,FWD,Highway,Aggressive,16
+Maruti,Celerio,2016,998,67,830,Petrol,Manual,FWD,Highway,Aggressive,21
+Hyundai,Venue,2016,998,81,1090,Petrol,Manual,FWD,City,Normal,13
+Mahindra,Xylo,2016,2179,118,1820,Diesel,Manual,RWD,Highway,Normal,14
+Mahindra,XUV500,2016,2179,153,1800,Diesel,Automatic,AWD,Highway,Normal,16
+Mahindra,Scorpio,2017,2179,140,1825,Diesel,Manual,RWD,Highway,Normal,14
+Tata,Nexon,2017,1497,108,1305,Diesel,Manual,AWD,City,Aggressive,9
+Honda,Jazz,2017,1199,88,1055,Petrol,CVT,FWD,City,Aggressive,10
+Maruti,Suzuki S-Cross,2017,1462,103,1205,Petrol,Manual,FWD,City,Aggressive,15
+Honda,Brio,2017,1198,88,965,Petrol,Manual,FWD,City,Normal,11
+Tata,Aria,2017,2179,138,1910,Diesel,Manual,AWD,City,Aggressive,11
+Honda,Accord,2017,1993,187,1610,Petrol,Automatic,FWD,City,Normal,10
+Maruti,Swift,2017,1197,82,855,Petrol,Manual,FWD,City,Normal,20
+Tata,Safari,2017,1956,140,1890,Diesel,Manual,AWD,Highway,Normal,15
+Honda,City,2017,1497,117,1157,Petrol,CVT,FWD,Highway,Normal,17
+Maruti,Suzuki S-Cross,2017,1462,103,1205,Petrol,Manual,FWD,City,Aggressive,14
+Mahindra,Marazzo,2017,1497,121,1650,Diesel,Manual,FWD,Highway,Normal,17
+Honda,Jazz,2017,1199,88,1050,Petrol,CVT,FWD,Highway,Normal,17
+Maruti,IGNIS,2017,1197,82,865,Petrol,Manual,FWD,Highway,Normal,19
+Hyundai,Xcent,2017,1197,81,940,Petrol,Manual,FWD,Highway,Aggressive,19
+Tata,Tiago,2017,1199,84,935,Petrol,Manual,FWD,Highway,Aggressive,19
+Tata,Nano,2017,624,37,615,Petrol,Manual,RWD,Highway,Normal,29
+Mahindra,KUV100,2017,1198,82,1065,Petrol,Manual,FWD,Highway,Aggressive,16
+Mahindra,Scorpio,2017,2179,140,1825,Diesel,Manual,RWD,Highway,Normal,13
+Hyundai,Eon,2017,814,55,795,Petrol,Manual,FWD,Highway,Normal,22
+Honda,WR-V,2018,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,14
+Honda,Civic,2018,1799,138,1283,Petrol,CVT,FWD,Highway,Normal,21
+Mahindra,Xylo,2018,2179,118,1820,Diesel,Manual,RWD,Highway,Normal,14
+Mahindra,XUV500,2018,2179,153,1800,Diesel,Automatic,AWD,City,Normal,13
+Maruti,Baleno,2018,1197,81,865,Petrol,Manual,FWD,Highway,Normal,19
+Tata,Tigor ,2018,0,74,1125,Petrol,Automatic,FWD,Highway,Normal,20
+Maruti,Suzuki S-Cross,2018,1462,103,1205,Petrol,Manual,FWD,City,Aggressive,13
+Honda,Brio,2018,1198,88,965,Petrol,Manual,FWD,City,Normal,12
+Honda,Accord,2018,1993,187,1610,Petrol,Automatic,FWD,City,Normal,10
+Tata,Nano,2018,624,37,615,Petrol,Manual,RWD,City,Aggressive,20
+Maruti,S-Presso,2018,998,67,726,Petrol,Manual,FWD,City,Normal,17
+Mahindra,XUV300,2018,1197,110,1235,Diesel,Manual,FWD,City,Normal,17
+Tata,Aria,2018,2179,138,1910,Diesel,Manual,AWD,City,Normal,14
+Hyundai,Xcent,2018,1197,81,940,Petrol,Manual,FWD,Highway,Aggressive,18
+Mahindra,Thar,2018,1997,152,1620,Petrol,Manual,4WD,City,Aggressive,11
+Honda,City,2018,1498,119,1157,Petrol,CVT,FWD,Highway,Normal,17
+Mahindra,Marazzo,2018,1497,121,1650,Diesel,Manual,FWD,Highway,Aggressive,15
+Maruti,IGNIS,2018,1197,82,865,Petrol,Manual,FWD,Highway,Normal,19
+Hyundai,Santro,2018,1086,68,910,Petrol,Manual,FWD,Highway,Aggressive,14
+Mahindra,XUV500,2018,2179,153,1800,Diesel,Automatic,AWD,Highway,Aggressive,15
+Tata,Tiago,2018,1199,84,935,Petrol,Manual,FWD,Highway,Aggressive,19
+Hyundai,Xcent,2018,1197,81,940,Petrol,Manual,FWD,Highway,Normal,19
+Mahindra,KUV100,2018,1198,82,1065,Petrol,Manual,FWD,Highway,Aggressive,16
+Maruti,Celerio,2018,998,67,830,Petrol,Manual,FWD,Highway,Aggressive,21
+Honda,Amaze,2018,1199,88,905,Petrol,Manual,FWD,City,Aggressive,13
+Maruti,Swift,2018,1197,83,855,Petrol,Manual,FWD,Highway,Aggressive,23
+Hyundai,Alcazar,2018,1497,113,1450,Diesel,Automatic,AWD,Highway,Aggressive,19
+Tata,Harrier,2018,1956,168,1675,Diesel,Automatic,AWD,Highway,Normal,14
+Honda,WR-V,2018,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,13
+Hyundai,Venue,2018,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,19
+Maruti,Baleno,2018,1197,82,865,Petrol,Manual,FWD,Highway,Normal,18
+Maruti,IGNIS,2018,1197,82,865,Petrol,Manual,FWD,Highway,Normal,17
+Honda,Civic,2018,1799,138,1283,Petrol,CVT,FWD,Highway,Normal,20
+Hyundai,Alcazar,2018,1497,113,1450,Diesel,Automatic,AWD,Highway,Normal,21
+Honda,Amaze,2018,1498,97,1080,Petrol,CVT,FWD,Highway,Aggressive,15
+Hyundai,Creta,2018,1497,113,1260,Diesel,Manual,FWD,Highway,Normal,19
+Hyundai,Elite i20,2018,1197,82,1085,Petrol,Manual,FWD,City,Aggressive,15
+Hyundai,Venue,2018,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,18
+Mahindra,XUV300,2018,1197,110,1235,Diesel,Manual,FWD,Highway,Normal,20
+Maruti,S-Presso,2018,998,67,726,Petrol,Manual,FWD,City,Normal,16
+Tata,Harrier,2018,1956,168,1675,Diesel,Automatic,AWD,Highway,Aggressive,13
+Maruti,Celerio,2019,998,67,830,Petrol,Manual,FWD,Highway,Aggressive,21
+Hyundai,Grand i10 Nios,2019,998,67,915,Petrol,Manual,FWD,Highway,Aggressive,16
+Maruti,Baleno,2019,1197,81,865,Petrol,Manual,FWD,Highway,Normal,20
+Tata,Tigor,2019,0,74,1125,Petrol,Automatic,FWD,Highway,Normal,20
+Honda,Civic,2019,1799,138,1283,Petrol,CVT,FWD,City,Normal,10
+Honda,City,2019,1498,119,1157,Petrol,CVT,FWD,City,Normal,11
+Mahindra,E Verito,2019,1461,65,1630,Electric,Automatic,FWD,City,Normal,18
+Honda,City,2019,1497,117,1157,Petrol,CVT,FWD,City,Normal,11
+Hyundai,Xcent,2019,1197,81,940,Petrol,Manual,FWD,Highway,Normal,18
+Honda,Accord,2019,1993,187,1610,Petrol,Automatic,FWD,City,Normal,10
+Honda,Brio,2019,1198,88,965,Petrol,Manual,FWD,Highway,Normal,18
+Maruti,Vitara Brezza,2019,1248,88,1170,Diesel,Manual,FWD,City,Aggressive,21
+Tata,Aria,2019,2179,138,1910,Diesel,Manual,AWD,City,Normal,14
+Mahindra,XUV300,2019,1197,110,1235,Diesel,Manual,FWD,City,Normal,17
+Maruti,S-Presso,2019,998,67,726,Petrol,Manual,FWD,City,Normal,17
+Hyundai,Grand i10 Nios,2019,998,67,915,Petrol,Manual,FWD,City,Aggressive,9
+Tata,Altroz,2019,1199,86,1036,Petrol,Manual,FWD,Highway,Normal,19
+Maruti,Alto K10,2019,998,67,765,Petrol,Manual,FWD,City,Normal,16
+Tata,Aria,2019,2179,138,1910,Diesel,Manual,AWD,City,Normal,16
+Mahindra,Marazzo,2019,1497,121,1650,Diesel,Manual,FWD,Highway,Normal,12
+Honda,Jazz,2019,1199,88,1050,Petrol,CVT,FWD,Highway,Normal,16
+Tata,Aria,2019,2179,138,1910,Diesel,Manual,AWD,Highway,Normal,18
+Maruti,IGNIS,2019,1197,82,865,Petrol,Manual,FWD,Highway,Normal,19
+Tata,Tiago,2019,1199,84,935,Petrol,Manual,FWD,Highway,Aggressive,19
+Hyundai,Santro,2019,1086,68,910,Petrol,Manual,FWD,Highway,Normal,17
+Mahindra,Xylo,2019,2179,118,1820,Diesel,Manual,RWD,Highway,Normal,14
+Hyundai,Venue,2019,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,19
+Honda,WR-V,2019,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,14
+Tata,Harrier,2019,1956,168,1675,Diesel,Automatic,AWD,Highway,Normal,14
+Mahindra,KUV100,2019,1198,82,1065,Petrol,Manual,FWD,City,Aggressive,13
+Tata,Tiago,2019,1199,84,935,Petrol,Manual,FWD,Highway,Aggressive,18
+Maruti,Baleno,2019,1197,81,865,Petrol,Manual,FWD,Highway,Normal,19
+Maruti,Dzire,2019,1197,82,880,Petrol,Manual,FWD,City,Normal,18
+Tata,Nexon,2019,1199,108,1295,Petrol,Manual,FWD,City,Normal,12
+Maruti,Wagon R,2019,998,67,805,Petrol,Manual,FWD,City,Normal,19
+Tata,Tiago,2019,1199,84,935,Petrol,Manual,FWD,Highway,Normal,20
+Maruti,S-Presso,2019,998,67,726,Petrol,Manual,FWD,City,Normal,16
+Tata,Harrier,2019,1956,168,1675,Diesel,Automatic,AWD,City,Aggressive,8
+Honda,WR-V,2019,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,13
+Hyundai,Venue,2019,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,18
+Mahindra,XUV300,2019,1197,110,1235,Diesel,Manual,FWD,Highway,Normal,22
+Mahindra,KUV100,2020,1198,82,1065,Petrol,Manual,FWD,Highway,Aggressive,16
+Maruti,Celerio,2020,998,67,815,Petrol,Manual,FWD,Highway,Aggressive,21
+Maruti,Vitara Brezza,2020,1462,103,1110,Petrol,Manual,FWD,City,Aggressive,15
+Tata,Nexon,2020,1199,127,1400,Petrol,Automatic,AWD,Highway,Normal,22
+Honda,Civic,2020,1799,138,1283,Petrol,CVT,FWD,Highway,Normal,19
+Maruti,Baleno,2020,1197,81,865,Petrol,Manual,FWD,Highway,Normal,20
+Tata,Tigor ,2020,0,74,1125,Petrol,Automatic,FWD,Highway,Normal,20
+Honda,City,2020,1498,119,1157,Petrol,CVT,FWD,Highway,Normal,17
+Hyundai,Grand i10 Nios,2020,998,67,915,Petrol,Manual,FWD,City,Normal,12
+Mahindra,Thar,2020,2184,130,1750,Diesel,Manual,4WD,City,Normal,12
+Maruti,Swift,2020,1197,83,855,Petrol,Manual,FWD,Highway,Aggressive,20
+Mahindra,E Verito,2020,1461,65,1630,Electric,Automatic,FWD,City,Aggressive,15
+Mahindra,Marazzo,2020,1497,121,1650,Diesel,Manual,FWD,City,Aggressive,8
+Honda,Brio,2020,1198,88,965,Petrol,Manual,FWD,Highway,Aggressive,16
+Mahindra,XUV300,2020,1197,110,1235,Diesel,Manual,FWD,City,Normal,17
+Tata,Aria,2020,2179,138,1910,Diesel,Manual,AWD,Highway,Normal,18
+Maruti,S-Presso,2020,998,67,726,Petrol,Manual,FWD,City,Aggressive,14
+Maruti,IGNIS,2020,1197,82,865,Petrol,Manual,FWD,Highway,Normal,19
+Honda,Accord,2020,1993,187,1610,Petrol,Automatic,FWD,Highway,Normal,14
+Mahindra,Marazzo,2020,1497,121,1650,Diesel,Manual,FWD,City,Normal,14
+Maruti,Suzuki S-Cross,2020,1462,103,1205,Petrol,Manual,FWD,City,Aggressive,13
+Tata,Tiago,2020,1199,84,935,Petrol,Manual,FWD,Highway,Aggressive,19
+Hyundai,Grand i10 Nios,2020,998,67,915,Petrol,Manual,FWD,City,Aggressive,9
+Hyundai,Creta,2020,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,19
+Tata,Altroz,2020,1199,86,1036,Petrol,Manual,FWD,Highway,Normal,19
+Tata,Harrier,2020,1956,168,1675,Diesel,Automatic,AWD,Highway,Normal,14
+Hyundai,Venue,2020,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,19
+Honda,WR-V,2020,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,14
+Tata,Nexon,2020,1199,127,1400,Petrol,Automatic,AWD,Highway,Normal,21
+Hyundai,Eon,2020,814,55,795,Petrol,Manual,FWD,Highway,Normal,21
+Mahindra,KUV100,2020,1198,82,1065,Petrol,Manual,FWD,Highway,Normal,17
+Hyundai,Verna,2020,1497,113,1205,Diesel,Manual,FWD,Highway,Aggressive,15
+Mahindra,Bolero,2020,1498,74,1660,Diesel,Manual,RWD,Highway,Aggressive,12
+Mahindra,Bolero,2020,1498,74,1660,Diesel,Manual,RWD,Highway,Aggressive,11
+Hyundai,Venue,2020,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,18
+Mahindra,XUV300,2020,1197,110,1235,Diesel,Manual,FWD,Highway,Normal,21
+Maruti,S-Presso,2020,998,67,726,Petrol,Manual,FWD,City,Normal,16
+Tata,Harrier,2020,1956,168,1675,Diesel,Automatic,AWD,City,Aggressive,9
+Honda,WR-V,2020,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,13
+Tata,Tiago,2021,1199,84,935,Petrol,Manual,FWD,Highway,Aggressive,19
+Mahindra,KUV100,2021,1198,82,1065,Petrol,Manual,FWD,Highway,Aggressive,16
+Tata,Nexon,2021,1199,127,1400,Petrol,Automatic,AWD,Highway,Normal,22
+Honda,Amaze,2021,1199,89,905,Petrol,CVT,FWD,Highway,Aggressive,17
+Maruti,Baleno,2021,1197,81,865,Petrol,Manual,FWD,Highway,Normal,20
+Tata,Tigor,2021,0,74,1125,Petrol,Automatic,FWD,Highway,Normal,20
+Honda,City,2021,1498,119,1157,Petrol,CVT,FWD,Highway,Normal,17
+Honda,Accord,2021,1993,187,1610,Petrol,Automatic,FWD,City,Normal,10
+Hyundai,Creta,2021,1497,113,1280,Diesel,Automatic,AWD,City,Aggressive,8
+Mahindra,Thar,2021,1997,152,1620,Petrol,Manual,4WD,City,Normal,12
+Hyundai,Grand i10 Nios,2021,998,67,915,Petrol,Manual,FWD,City,Normal,13
+Maruti,Alto K10,2021,998,67,765,Petrol,Manual,FWD,City,Normal,15
+Tata,Harrier,2021,1956,168,1675,Diesel,Automatic,AWD,Highway,Normal,14
+Honda,Civic,2021,1799,138,1283,Petrol,CVT,FWD,City,Normal,10
+Mahindra,E Verito,2021,1461,65,1630,Electric,Automatic,FWD,City,Aggressive,16
+Hyundai,Xcent,2021,1197,81,940,Petrol,Manual,FWD,Highway,Normal,19
+Mahindra,Marazzo,2021,1497,121,1650,Diesel,Manual,FWD,City,Aggressive,9
+Mahindra,Thar,2021,2184,130,1750,Diesel,Manual,4WD,City,Aggressive,10
+Honda,Accord,2021,1993,187,1610,Petrol,Automatic,FWD,Highway,Normal,13
+Mahindra,XUV300,2021,1197,110,1235,Diesel,Manual,FWD,City,Normal,17
+Maruti,S-Presso,2021,998,67,726,Petrol,Manual,FWD,City,Normal,17
+Mahindra,Thar,2021,1997,152,1620,Petrol,Manual,4WD,City,Aggressive,10
+Tata,Nano,2021,624,37,615,Petrol,Manual,RWD,City,Aggressive,20
+Mahindra,E Verito,2021,1461,65,1630,Electric,Automatic,FWD,Highway,Normal,21
+Maruti,Celerio,2021,998,67,830,Petrol,Manual,FWD,Highway,Aggressive,20
+Tata,Harrier,2021,1956,168,1675,Diesel,Automatic,AWD,Highway,Normal,14
+Hyundai,Venue,2021,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,19
+Maruti,IGNIS,2021,1197,82,865,Petrol,Manual,FWD,Highway,Normal,19
+Honda,Civic,2021,1799,138,1283,Petrol,CVT,FWD,Highway,Normal,21
+Hyundai,Alcazar,2021,1497,113,1450,Diesel,Automatic,AWD,Highway,Normal,21
+Honda,WR-V,2021,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,14
+Maruti,Swift,2021,1197,82,855,Petrol,Manual,FWD,Highway,Normal,25
+Tata,Tiago,2021,1199,84,935,Petrol,Manual,FWD,City,Aggressive,11
+Honda,CR-V,2021,1997,154,1635,Petrol,Automatic,AWD,City,Normal,15
+Honda,WR-V,2021,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,13
+Maruti,Ciaz,2021,1462,103,1020,Petrol,Manual,FWD,Highway,Normal,18
+Tata,Tiago,2021,1199,84,935,Petrol,Manual,FWD,Highway,Aggressive,18
+Honda,Amaze,2021,1199,89,905,Petrol,Manual,FWD,City,Normal,17
+Tata,Harrier,2021,1956,168,1675,Diesel,Automatic,AWD,City,Aggressive,9
+Hyundai,Venue,2021,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,18
+Mahindra,XUV300,2021,1197,110,1235,Diesel,Manual,FWD,Highway,Normal,22
+Maruti,S-Presso,2021,998,67,726,Petrol,Manual,FWD,City,Normal,16
+Maruti,Vitara Brezza,2022,1462,103,1110,Petrol,Manual,FWD,Highway,Aggressive,17
+Honda,Amaze,2022,1199,89,905,Petrol,CVT,FWD,Highway,Normal,19
+Hyundai,Venue,2022,998,81,1090,Petrol,Manual,FWD,City,Aggressive,11
+Maruti,Baleno,2022,1197,81,865,Petrol,Manual,FWD,Highway,Normal,20
+Maruti,Alto,2022,796,47,740,Petrol,Manual,FWD,Highway,Normal,21
+Hyundai,Verna,2022,1497,113,1150,Petrol,Automatic,FWD,Highway,Normal,17
+Maruti,IGNIS,2022,1197,82,865,Petrol,Manual,FWD,Highway,Normal,19
+Tata,Tiago,2022,1199,84,935,Petrol,Manual,FWD,Highway,Aggressive,19
+Tata,Altroz,2022,1199,86,1036,Petrol,Manual,FWD,Highway,Normal,20
+Mahindra,Thar,2022,1997,152,1620,Petrol,Manual,4WD,Highway,Aggressive,13
+Tata,Nexon,2022,1199,127,1400,Petrol,Automatic,AWD,Highway,Normal,22
+Maruti,Alto K10,2022,998,67,765,Petrol,Manual,FWD,Highway,Normal,15
+Hyundai,Eon,2022,814,55,795,Petrol,Manual,FWD,Highway,Aggressive,20
+Maruti,Vitara Brezza,2022,1248,88,1170,Diesel,Manual,FWD,Highway,Aggressive,17
+Honda,Civic,2022,1799,138,1283,Petrol,CVT,FWD,Highway,Aggressive,18
+Hyundai,Grand i10 Nios,2022,998,67,915,Petrol,Manual,FWD,Highway,Aggressive,19
+Mahindra,E Verito,2022,1461,41,1060,Electric,Automatic,FWD,Highway,Normal,22
+Honda,Jazz,2022,1199,88,1050,Petrol,CVT,FWD,Highway,Normal,18
+Tata,Tigor,2022,0,74,1125,Petrol,Automatic,FWD,Highway,Normal,20
+Honda,City,2022,1498,119,1157,Petrol,CVT,FWD,Highway,Normal,17
+Honda,Amaze,2022,1199,89,905,Petrol,CVT,FWD,City,Normal,15
+Honda,Jazz,2022,1199,88,1050,Petrol,CVT,FWD,Highway,Aggressive,14
+Maruti,IGNIS,2022,1197,82,865,Petrol,Manual,FWD,Highway,Normal,16
+Tata,Nexon,2022,1497,108,1305,Diesel,Manual,AWD,City,Normal,13
+Mahindra,XUV300,2022,1197,110,1235,Diesel,Manual,FWD,City,Normal,18
+Mahindra,Marazzo,2022,1497,121,1650,Diesel,Manual,FWD,City,Normal,11
+Mahindra,Marazzo,2022,1497,121,1650,Diesel,Manual,FWD,City,Normal,12
+Honda,Accord,2022,1993,187,1610,Petrol,Automatic,FWD,City,Aggressive,9
+Hyundai,Grand i10 Nios,2022,998,67,915,Petrol,Manual,FWD,City,Normal,13
+Mahindra,XUV300,2022,1197,110,1235,Diesel,Manual,FWD,City,Normal,17
+Hyundai,Xcent,2022,1197,81,940,Petrol,Manual,FWD,City,Normal,17
+Hyundai,Venue,2022,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,19
+Maruti,S-Presso,2022,998,67,726,Petrol,Manual,FWD,City,Normal,17
+Tata,Aria,2022,2179,138,1910,Diesel,Manual,AWD,City,Normal,16
+Hyundai,Xcent,2022,1197,81,940,Petrol,Manual,FWD,City,Normal,17
+Mahindra,Thar,2022,1997,152,1620,Petrol,Manual,4WD,City,Aggressive,11
+Tata,Harrier,2022,1956,168,1675,Diesel,Automatic,AWD,Highway,Normal,14
+Mahindra,Xylo,2022,2179,118,1820,Diesel,Manual,RWD,Highway,Normal,14
+Maruti,Baleno,2022,1197,81,865,Petrol,Manual,FWD,Highway,Normal,19
+Maruti,IGNIS,2022,1197,82,865,Petrol,Manual,FWD,Highway,Normal,18
+Mahindra,XUV500,2022,2179,153,1785,Diesel,Manual,AWD,Highway,Aggressive,14
+Maruti,Ertiga,2022,1462,103,1135,Petrol,Manual,FWD,Highway,Normal,17
+Honda,WR-V,2022,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,14
+Hyundai,Santro,2022,1086,68,870,Petrol,Manual,FWD,City,Normal,12
+Mahindra,XUV700,2022,1997,200,1970,Diesel,Automatic,AWD,City,Normal,11
+Maruti,Vitara Brezza,2022,1462,103,1180,Petrol,Manual,FWD,Highway,Aggressive,16
+Mahindra,XUV300,2022,1197,110,1235,Diesel,Manual,FWD,Highway,Aggressive,19
+Maruti,S-Presso,2022,998,67,726,Petrol,Manual,FWD,City,Normal,16
+Hyundai,i20,2022,1197,82,1012,Petrol,Manual,FWD,Highway,Normal,17
+Tata,Harrier,2022,1956,168,1675,Diesel,Automatic,AWD,City,Aggressive,9
+Honda,WR-V,2022,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,13
+Hyundai,Venue,2022,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,18
+Maruti,Swift,2023,1200,82,870,Petrol,Manual,FWD,Highway,Normal,23
+Mahindra,XUV500,2023,2179,153,1800,Diesel,Automatic,AWD,Highway,Normal,15
+Mahindra,Scorpio,2023,2179,140,1825,Diesel,Manual,RWD,Highway,Aggressive,14
+Tata,Harrier,2023,1956,168,1675,Diesel,Automatic,AWD,Highway,Normal,14
+Maruti,Celerio,2023,998,67,815,Petrol,Manual,FWD,Highway,Normal,23
+Maruti,IGNIS,2023,1197,82,865,Petrol,Manual,FWD,Highway,Normal,19
+Mahindra,Thar,2023,2184,130,1750,Diesel,Manual,4WD,Highway,Normal,14
+Tata,Nexon,2023,1199,127,1400,Petrol,Automatic,AWD,Highway,Normal,22
+Mahindra,Thar,2023,1997,152,1620,Petrol,Manual,4WD,Highway,Aggressive,13
+Maruti,Suzuki S-Cross,2023,1462,103,1205,Petrol,Manual,FWD,Highway,Aggressive,17
+Maruti,Alto K10,2023,998,67,765,Petrol,Manual,FWD,Highway,Normal,21
+Honda,Civic,2023,1799,138,1283,Petrol,CVT,FWD,Highway,Aggressive,17
+Mahindra,E Verito,2023,1461,41,1060,Electric,Automatic,FWD,Highway,Aggressive,21
+Maruti,Baleno,2023,1197,81,865,Petrol,Manual,FWD,Highway,Normal,20
+Maruti,Ciaz,2023,1462,103,1010,Petrol,Manual,FWD,Highway,Aggressive,15
+Honda,City,2023,1498,119,1157,Petrol,CVT,FWD,Highway,Normal,19
+Tata,Tiago,2023,1199,84,935,Petrol,Manual,FWD,Highway,Aggressive,18
+Hyundai,Venue,2023,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,19
+Hyundai,Creta,2023,1497,113,1280,Diesel,Automatic,AWD,City,Normal,10
+Maruti,S-Presso,2023,998,67,726,Petrol,Manual,FWD,City,Normal,21
+Mahindra,Marazzo,2023,1497,121,1650,Diesel,Manual,FWD,City,Normal,13
+Mahindra,Thar,2023,2184,130,1750,Diesel,Manual,AWD,City,Aggressive,9
+Honda,Jazz,2023,1199,88,1050,Petrol,CVT,FWD,Highway,Aggressive,14
+Honda,Jazz,2023,1199,88,1055,Petrol,CVT,FWD,City,Normal,12
+Hyundai,Grand i10 Nios,2023,998,67,915,Petrol,Manual,FWD,City,Normal,14
+Maruti,S-Presso,2023,998,67,726,Petrol,Manual,FWD,City,Normal,17
+Tata,Tigor,2023,0,74,1125,Petrol,Automatic,FWD,Highway,Normal,20
+Mahindra,XUV300,2023,1197,110,1235,Diesel,Manual,FWD,City,Normal,17
+Honda,City,2023,1498,119,1157,Petrol,CVT,FWD,Highway,Aggressive,16
+Maruti,Suzuki S-Cross,2023,1462,103,1205,Petrol,Manual,FWD,City,Aggressive,15
+Honda,Brio,2023,1198,88,965,Petrol,Manual,FWD,City,Normal,10
+Hyundai,Grand i10 Nios,2023,998,67,915,Petrol,Manual,FWD,City,Aggressive,10
+Maruti,Alto K10,2023,998,67,765,Petrol,Manual,FWD,City,Normal,16
+Honda,Jazz,2023,1199,88,1050,Petrol,CVT,FWD,Highway,Normal,18
+Mahindra,KUV100,2023,1198,82,1065,Petrol,Manual,FWD,Highway,Normal,17
+Tata,Altroz,2023,1199,108,1036,Petrol,Manual,FWD,Highway,Aggressive,15
+Honda,WR-V,2023,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,17
+Honda,WR-V,2023,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,14
+Honda,WR-V,2023,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,14
+Honda,WR-V,2023,1199,88,1104,Petrol,Manual,FWD,City,Aggressive,10
+Tata,Tiago,2023,1199,84,935,Petrol,Manual,FWD,Highway,Normal,13
+Honda,CR-V,2023,1997,154,1635,Petrol,Automatic,AWD,City,Aggressive,13
+Hyundai,Alcazar,2023,1497,113,1450,Diesel,Automatic,AWD,City,Aggressive,12
+Honda,City,2023,1498,119,1157,Petrol,CVT,FWD,City,Aggressive,8
+Hyundai,Alcazar,2023,1497,113,1450,Diesel,Automatic,AWD,City,Aggressive,12
+Honda,WR-V,2023,1199,88,1104,Petrol,Manual,FWD,City,Aggressive,13
+Hyundai,Venue,2023,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,18
+Mahindra,XUV300,2023,1197,110,1235,Diesel,Manual,FWD,Highway,Aggressive,19
+Maruti,S-Presso,2023,998,67,726,Petrol,Manual,FWD,City,Normal,16
+Tata,Harrier,2023,1956,168,1675,Diesel,Automatic,AWD,City,Aggressive,10
+Honda,WR-V,2023,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,13
+Hyundai,i20,2024,1197,81,1026,Petrol,Automatic,FWD,Highway,Normal,18
+Tata,Altroz,2024,1199,86,1036,Petrol,Manual,FWD,Highway,Normal,19
+Hyundai,Santro,2024,1086,68,910,Petrol,Manual,FWD,Highway,Normal,17
+Tata,Hexa,2024,2179,153,2380,Diesel,Automatic,AWD,Highway,Aggressive,12
+Mahindra,Alturas G4,2024,2157,178,2440,Diesel,Automatic,AWD,Highway,Aggressive,11
+Maruti,Baleno,2024,1197,81,865,Petrol,Manual,FWD,Highway,Normal,20
+Tata,Tigor,2024,0,74,1125,Petrol,Automatic,FWD,Highway,Normal,20
+Honda,Amaze,2024,1199,89,905,Petrol,Manual,FWD,Highway,Normal,18
+Mahindra,Xylo,2024,2179,118,1820,Diesel,Manual,RWD,Highway,Normal,14
+Tata,Harrier,2024,1956,168,1675,Diesel,Automatic,AWD,Highway,Normal,14
+Tata,Nexon,2024,1199,127,1400,Petrol,Automatic,AWD,Highway,Normal,22
+Maruti,Suzuki S-Cross,2024,1462,103,1205,Petrol,Manual,FWD,Highway,Normal,19
+Honda,Civic,2024,1799,138,1283,Petrol,CVT,FWD,Highway,Aggressive,16
+Hyundai,Grand i10 Nios,2024,998,67,915,Petrol,Manual,FWD,Highway,Normal,20
+Tata,Tigor,2024,0,74,1125,Petrol,Automatic,FWD,Highway,Normal,19
+Hyundai,Venue,2024,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,19
+Hyundai,Alcazar,2024,1497,113,1450,Diesel,Automatic,AWD,Highway,Normal,21
+Maruti,Celerio,2024,998,67,830,Petrol,Manual,FWD,Highway,Aggressive,20
+Honda,City,2024,1498,119,1157,Petrol,CVT,FWD,Highway,Normal,18
+Tata,Safari,2024,1956,168,1825,Diesel,Automatic,AWD,Highway,Aggressive,12
+Maruti,Ertiga,2024,1462,103,1135,Petrol,Manual,FWD,City,Aggressive,11
+Maruti,Alto K10,2024,998,67,765,Petrol,Manual,FWD,City,Normal,22
+Hyundai,Grand i10 Nios,2024,1197,81,920,Petrol,Manual,FWD,City,Aggressive,12
+Maruti,S-Presso,2024,998,67,726,Petrol,Manual,FWD,City,Normal,20
+Hyundai,Grand i10 Nios,2024,998,67,915,Petrol,Manual,FWD,City,Normal,14
+Hyundai,Eon,2024,814,55,795,Petrol,Manual,FWD,Highway,Normal,22
+Mahindra,Marazzo,2024,1497,121,1650,Diesel,Manual,FWD,City,Aggressive,12
+Mahindra,XUV300,2024,1197,110,1235,Diesel,Manual,FWD,City,Normal,17
+Maruti,S-Presso,2024,998,67,726,Petrol,Manual,FWD,City,Aggressive,21
+Honda,Jazz,2024,1199,88,1050,Petrol,CVT,FWD,Highway,Normal,18
+Mahindra,E Verito,2024,1461,65,1630,Electric,Automatic,FWD,Highway,Aggressive,20
+Honda,Accord,2024,1993,187,1610,Petrol,Automatic,FWD,Highway,Aggressive,11
+Maruti,Suzuki S-Cross,2024,1462,103,1205,Petrol,Manual,FWD,City,Aggressive,14
+Mahindra,Scorpio,2024,2179,120,2510,Diesel,Manual,4WD,City,Normal,12
+Honda,City,2024,1498,119,1157,Petrol,CVT,FWD,City,Normal,11
+Maruti,Vitara Brezza,2024,1462,103,1180,Petrol,Manual,FWD,Highway,Normal,19
+Tata,Safari,2024,1956,167,1900,Diesel,Manual,RWD,Highway,Normal,14
+Mahindra,Alturas G4,2024,2157,178,2410,Diesel,Automatic,AWD,City,Normal,10
+Maruti,Suzuki Eeco,2024,1196,72,935,Petrol,Manual,RWD,Highway,Normal,14
+Tata,Safari,2024,1956,167,1900,Diesel,Manual,RWD,City,Aggressive,9
+Honda,WR-V,2024,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,14
+Honda,WR-V,2024,1199,88,1114,Petrol,CVT,FWD,City,Aggressive,9
+Maruti,S-Presso,2024,998,67,726,Petrol,Manual,FWD,Highway,Normal,24
+Tata,Harrier,2024,1956,168,1675,Diesel,Automatic,AWD,City,Aggressive,12
+Honda,WR-V,2024,1199,88,1104,Petrol,Manual,FWD,Highway,Aggressive,13
+Hyundai,Venue,2024,1497,113,1280,Diesel,Automatic,AWD,Highway,Normal,18
+Mahindra,XUV300,2024,1197,110,1235,Diesel,Manual,FWD,Highway,Normal,21
+Maruti,S-Presso,2024,998,67,726,Petrol,Manual,FWD,City,Normal,16

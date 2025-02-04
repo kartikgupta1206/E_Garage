@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>E-GARAGE PORTAL</title>
+    <link rel="icon" type="image/x-icon" href="static/logo_new.jpg" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <meta property="og:title" content="Agency modern template" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.6); /* black color */
+        border-radius: 10px;
+        color: #black; /* white text color */
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #fff; /* white text color */
+      }
+      input[type="text"],
+      input[type="number"],
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #fff; /* white border */
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.2); /* slightly transparent white background */
+        color: #000; /* black text color */
+        margin-top: 5px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50; /* green color */
+        color: white;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049; /* darker green color on hover */
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Noto Sans;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+      }
+      .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.6); /* black color */
+        border-radius: 10px;
+        color: #fff; /* white text color */
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #fff; /* white text color */
+      }
+      input[type="text"],
+      input[type="number"],
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #fff; /* white border */
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.2); /* slightly transparent white background */
+        color: #000; /* black text color */
+        margin-top: 5px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50; /* green color */
+        color: white;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049; /* darker green color on hover */
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/fuelpredictionstyle.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="static\mainpagestyle.css" />
+    <div>
+      <link href="static\mainpage.css" rel="stylesheet" />
+    <link rel="stylesheet" href="static/maintenancepredictionstyle.css" />
+    <div>
+      <link href="static/maintenanceprediction.css" rel="stylesheet" />
+        <div class="home-featured">
+          <div class="home-container1">
+            <div class="home-container2">
+              <style>
+                body {
+                  background-image: url("background-image.jpg"); /* Replace 'background-image.jpg' with the path to your background image */
+                  background-size: cover;
+                  font-family: Arial, sans-serif;
+                  background-color: darkblue;
+                }
+                .container {
+                  max-width: 400px;
+                  margin: 50px auto;
+                  padding: 20px;
+                  background: rgba(0, 0, 0, 0.6); /* black color */
+                  border-radius: 10px;
+                  color: #fff; /* white text color */
+                }
+                .btn {
+                  width: 100%;
+                  height: 45px;
+                  background: #fff;
+                  border: none;
+                  outline: none;
+                  border-radius: 40px;
+                  box-shadow: 0 0 10px rgda(0, 0, 0, 0.1);
+                  cursor: pointer;
+                  font-size: 16px;
+                  color: #333;
+                  font-weight: 600;
+                }
+                .form-group {
+                  margin-bottom: 20px;
+                }
+                label {
+                  display: block;
+                  margin-bottom: 5px;
+                  color: #fff; /* white text color */
+                }
+                input[type="text"],
+                input[type="number"],
+                select {
+                  width: 100%;
+                  padding: 10px;
+                  border: 1px solid #fff; /* white border */
+                  border-radius: 5px;
+                  box-sizing: border-box;
+                  background-color: rgba(
+                    255,
+                    255,
+                    255,
+                    0.2
+                  ); /* slightly transparent white background */
+                  color: #000; /* white text color */
+                  margin-top: 5px;
+                }
+                input[type="submit"] {
+                  width: 100%;
+                  padding: 10px;
+                  border: none;
+                  border-radius: 5px;
+                  background-color: #4caf50; /* green color */
+                  color: white;
+                  cursor: pointer;
+                }
+                input[type="submit"]:hover {
+                  background-color: #45a049; /* darker green color on hover */
+                }
+                .submit {
+                  color:white;
+                  height:30px;
+                  width:70px;
+                  border-radius:5px;
+                  background-color: #04AA6D; 
+                  transition-duration: 0.4s;
+                }
+                
+                .submit:hover {
+                  background-color: white; /* Green */
+                  color: black;
+                }
+                li .name1{
+                  color: white;
+                  font-size:30px;
+                  justify-content:center;
+                  align-text:center;
+                  position:absolute;
+                  display:flex;
+                  right:20%;
+              }
+              </style>
+              
+              <form id ='carform' action="{{ url_for('form1')}}" method="POST">
+                <li><div class="name1" >Hello {{ email }}</div></li>
+              <div class="container">
+                
+                <!-- Add a hidden input field to store the email -->
+                <input type="hidden" name="email" value="{{ email }}">
+
+                <h2 style="text-align: center">Car Details Form</h2>
+                <form method="POST" action="/form1">
+                  <div class="form-group">
+                    <label for="brand">Car Brand:</label>
+                    <select id="brand" name="brand" required="">
+                      <option value="">Select Brand of your car:</option>
+                      <option value="1">Maruti Suzuki</option>
+                      <option value="2">Hyundai</option>
+                      <option value="3">CNG</option>
+                      <option value="4">Tata</option>
+                      <option value="5">Honda</option>
+                      <option value="6">Toyota</option>
+                      <option value="7">Volkswagen</option>
+                      <option value="8">Kia</option>
+                      <option value="9">Ford</option>
+                      <option value="10">Mahindra</option>
+                      <option value="11">Renault</option>
+                      <option value="12">Nissan</option>
+                      <option value="13">Mercedes-Benz</option>
+                      <option value="14">BMW</option>
+                      <option value="15">Jaguar</option>
+                      <option value="16">Lexus</option>
+                      <option value="17">Audi</option>
+                      <option value="18">Porsche</option>
+                      <option value="19">Aston Martin</option>
+                      <option value="20">Maserati</option>
+                      <option value="21">Bentley</option>
+                      <option value="22">Rolls-Royce</option>
+                      <option value="23">Lamborghini</option>
+                      <option value="24">Ferrari</option>
+                      <option value="25">McLaren</option>
+                      <option value="26">Bugatti</option>
+                      <option value="27">Volvo</option>
+                      <option value="28">Land Rover</option>
+                    </select>
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="year">
+                      Purchasing date:
+                    </label>
+                    <input
+                      type="text"
+                      id="year"
+                      name="year"
+                      placeholder="Enter Purchased date"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="km_driven">KM DRIVEN (IN KM):</label>
+                    <input
+                      type="number"
+                      id="km_driven"
+                      name="km_driven"
+                      min="0"
+                      placeholder="Enter the total no of km driven"
+                      required=""
+                    >
+                   <div class="form-group">
+                    <label for="fuelType">Fuel Type:</label>
+                    <select id="fuelType" name="fuelType" required="">
+                      <option value="">Select Fuel Type:</option>
+                      <option value="1">Petrol</option>
+                      <option value="2">Diesel</option>
+                      <option value="3">CNG</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="sellerType">Seller Type:</label>
+                    <select id="sellerType" name="sellerType" required="">
+                      <option value="">Select Seller Type:</option>
+                      <option value="1">Individual</option>
+                      <option value="2">Dealer</option>
+                      <option value="3">Trustmark Dealer</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="transmission">Transmission Type:</label>
+                    <select id="transmission" name="transmission" required="">
+                      <option value="">Select Transmission Type:</option>
+                      <option value="1">Manual</option>
+                      <option value="2">Automatic</option>
+                      <option value="3">CVT</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="owners">Owner Type</label>
+                    <select id="owners" name="owners" required="">
+                      <option value="">Select No. of Owners</option>
+                      <option value="1">First Owner</option>
+                      <option value="2">Second Owner</option>
+                      <option value="3">Third Owner</option>
+                      <option value="4">Fourth / Above Owner</option>
+                      <option value="5">Test Drive Car</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="mileage">Mileage of the car</label>
+                    <input
+                      type="number"
+                      id="mileage"
+                      name="mileage"
+                      min="0"
+                      placeholder="Enter the Mileage of the car"
+                      required=""
+                      step="0.01"
+                    />
+                  </div>
+                 
+                  <div class="form-group">
+                    <label for="engine_size">Engine Capacity (in cc):</label>
+                    <input
+                      type="number"
+                      id="engine_size"
+                      name="engine_size"
+                      placeholder="Enter the engine capacity"
+                      required=""
+                      min="0"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="horsepower">Horsepower (BHP):</label>
+                    <input
+                      type="number"
+                      id="horsepower"
+                      name="horsepower"
+                      placeholder="Enter the horsepower"
+                      required=""
+                      step="0.01"
+                      min="0"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="seat">Number of seats</label>
+                    <input
+                      type="number"
+                      id="seat"
+                      name="seat"
+                      min="2"
+                      max="14"
+                      placeholder="Number of seats available in your car"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="Weight">Weight of your Car:</label>
+                    <input
+                      type="number"
+                      id="Weight"
+                      name="Weight"
+                      placeholder="Enter the weight"
+                      required=""
+                      min="0"
+                      step="0.01"
+                    />
+                  </div>
+                  
+                  
+                  <div class="form-group">
+                    <label for="drive">Drive Mode:</label>
+                    <select id="drive" name="drive" required="">
+                      <option value="">Select Drive Mode</option>
+                      <option value="1">FWD</option>
+                      <option value="2">RWD</option>
+                      <option value="3">4WD</option>
+                      <option value="4">AWD</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="engineOil">Engine Oil Changes (km):</label>
+                    <input
+                      type="number"
+                      id="engineOil"
+                      name="engineOil"
+                      min="0"
+                      placeholder="Enter km after last oil change"
+                      required=""
+                    />
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="breakPad">
+                      Break Pad Changes (km):
+                    </label>
+                    <input
+                      type="number"
+                      id="breakPad"
+                      min="0"
+                      name="breakPad"
+                      placeholder="Enter km after last break pad change"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="transmissionFuel">
+                      Transmission Fuel Changes (km):
+                    </label>
+                    <input
+                      type="number"
+                      id="transmissionFuel"
+                      name="transmissionFuel"
+                      min="0"
+                      placeholder="Enter km after last transmission fuel change"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="sparkPlug">
+                      Spark Plug Changes (km):
+                    </label>
+                    <input
+                      type="number"
+                      id="sparkPlug"
+                      min="0"
+                      name="sparkPlug"
+                      placeholder="Enter km after last spark plug change"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="tireRotation">Tire Rotations (km):</label>
+                    <input
+                      type="number"
+                      id="tireRotation"
+                      min="0"
+                      name="tireRotation"
+                      placeholder="Enter number of tire rotations"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="last_service">
+                      Last Service(YYY-MM-DD):
+                    </label>
+                    <input
+                      type="text"
+                      id="last_service"
+                      name="last_service"
+                      placeholder="Enter Last service record"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="road">Type of Road:</label>
+                    <select id="road" name="road" required="">
+                      <option value="">Select Type of Mode</option>
+                      <option value="1">Highway</option>
+                      <option value="2">City</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="driving">Driving style:</label>
+                    <select id="road" name="road" required="">
+                      <option value="">Select driving style</option>
+                      <option value="1">Normal</option>
+                      <option value="2">Aggressive</option>
+                    </select>
+                  </div>
+                  
+                  <button type="submit" class="btn">Submit</button>
+        {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    {% if message %}
+        <p style="color: green;">{{ message }}</p>
+    {% endif %}
+  </div>
+              
+
+      </form>
+      <script>
+        // Add JavaScript to show alert after successful registration
+        {% if registration_success1 %}
+            alert("Registration successful. Click OK to proceed to login page.");
+            // Redirect to login page after showing the alert
+            window.location.replace("/login");
+        {% endif %}
+    </script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+      // Initialize Datepicker
+      $( function() {
+          $( "#year" ).datepicker({
+              dateFormat: 'yy-mm-dd',  // Set the date format to YYYY-MM-DD
+          
+          });
+      });
+  </script>
+    <script>
+        // Initialize Datepicker
+        $( function() {
+            $( "#last_service" ).datepicker({
+                dateFormat: 'yy-mm-dd',  // Set the date format to YYYY-MM-DD
+                maxDate: '0'  // Restrict calendar to show only today's date and future dates
+            });
+        });
+    </script>
+    <script>
+      // Add JavaScript to show alert after successful registration
+      {% if registration_success %}
+          alert("Details submitted successfully. Click OK to proceed to login page.");
+          // Redirect to login page after showing the alert
+          window.location.replace("/login");
+      {% endif %}
+  </script>
+              
+              
+            
+        
+    
+  </body>
+</html>

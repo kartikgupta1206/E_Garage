@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>E-GARAGE PORTAL </title>
+    <link rel="icon" type="image/x-icon" href="static/logo_new.jpg" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link rel="icon" href="static\logo1.png" type="image/png" >
+	</head>
+
+    <body>
+<style>
+  .caution{
+    color:red;
+  }
+  .home-logo4 {
+    position: fixed;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    z-index: 10;
+    bottom: 5px;
+    right: 5px;
+  }
+</style>
+      <link rel="stylesheet" href="static\mainpagestyle.css" />
+      <div>
+        <link href="static\mainpage.css" rel="stylesheet" />
+        <div class="home-container">
+          <div class="home-navbar">
+            <header data-thq="thq-navbar" class="home-navbar-interactive">
+              <div class="home-branding">
+                <a href="{{ url_for('index') }}"
+                  ><img alt="image" src="static/logo_new.jpg" class="home-logo"
+                /></a>
+                <a href="{{ url_for('index') }}"
+                  ><span class="home-company">E-Garage</span></a
+                >
+              </div>
+              <div class="home-items">
+                <div class="home-links">
+                  <a href="{{ url_for('index') }}">
+                    <span class="nav-link">Home</span></a
+                  >
+                  <a href="{{ url_for('maintenance') }}"
+                    ><span class="nav-link">Maintenance Prediciton</span></a
+                  >
+                  <a href="{{ url_for('car_price') }}"
+                    ><span class="nav-link">Price Predicition</span></a
+                  >
+                  <a href="{{ url_for('error') }}">
+                    <span class="nav-link">Fuel Effeciency Check</span></a
+                  >
+                  <a href="{{ url_for('login') }}">
+                    <span class="nav-link">Login</span></a
+                  >
+                </div>
+              </div>
+              <div data-thq="thq-burger-menu" class="home-burger-menu">
+                <button class="home-button button">
+                  <img
+                    alt="image"
+                    src="static/hamburger.svg"
+                    class="home-image"
+                  />
+                  <span class="home-text3">Start a project</span>
+                </button>
+              </div>
+              <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+                <div
+                  data-thq="thq-mobile-menu-nav"
+                  data-role="Nav"
+                  class="home-nav"
+                >
+                  <div class="home-top">
+                    <div class="home-branding1">
+                      <img
+                        alt="image"
+                        src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
+                        class="home-logo1"
+                      />
+                      <span class="home-company1">SPYRL</span>
+                    </div>
+                    <div data-thq="thq-close-menu" class="home-menu-close">
+                      <svg viewBox="0 0 1024 1024" class="home-icon">
+                        <path
+                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="home-items1">
+                    <div class="home-links1">
+                      <span class="nav-link">Work</span>
+                      <span class="nav-link">Services</span>
+                      <span class="nav-link">About</span>
+                      <span class="nav-link">Contact</span>
+                    </div>
+                    <button class="start-button button home-button1">
+                      <span class="home-text8">Start a project</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </header>
+          </div>
+          <br><br><br><br>
+		<!-- Result -->
+		<class="results">
+			{% if prediction==1 %}
+				<center><div><img src="static\maintenance.gif" alt="Maintenance Image" height="300px" width="300px"></div>
+				<h1>Prediction: <span class='danger'>Unfortunetly, you have to go to service center for your car maintenance</span></h1>
+			</center>
+			{% elif prediction==0 %}
+			<center><div ><img src="static\no_maintenance.gif" alt="no maintenance Image" height="300px" width="500px"></div> 
+				<h1>Prediction: <span class='safe'>Hurrah !!!! Your car not need any maintenance.</span></h1>
+			</center>
+			{% endif %}
+		</div>
+		<div class="caution">
+			<marquee><p>Caution: This is just a prediction.Kindly take an advice from the mechanic</p></marquee>
+		</div>
+		<div class="home-services">
+      <div class="home-header2">
+        <h2 class="heading">WHAT MAKES US DIFFERENT?</h2>
+      </div>
+      <div class="home-grid">
+        <div class="service-service service-root-class-name">
+          <h3 class="service-title"><span>ML Models</span></h3>
+          <span class="service-description">
+            <span>
+              Provides the best in class models and different ml models and
+              techniques which are different from the techniques employed by
+              various organisations, research papers.
+            </span>
+          </span>
+        </div>
+        <div class="service-service service-root-class-name1">
+          <h3 class="service-title"><span>All In One Services</span></h3>
+          <span class="service-description">
+            <span>
+              Provides all in one services which totally encompassed by a
+              single organisation.
+            </span>
+          </span>
+        </div>
+        <div class="service-service service-root-class-name5">
+          <h3 class="service-title"><span>In depth Knowledge</span></h3>
+          <span class="service-description">
+            <span>
+              In depth knowledge based on various research papers and trying
+              to complete the various goals that hav yet not been achieved
+              in various research papers.
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <footer class="home-footer">
+      <div class="home-information">
+        <div class="home-details">
+          <div class="home-header3">
+            <div class="home-branding2">
+              <span class="home-company2">E-Garage</span>
+            </div>
+            <div class="home-location">
+              <span class="home-caption">Office</span>
+              <span class="home-value">
+                Jaypee Institute Of Information Technology,Sector 128
+              </span>
+            </div>
+          </div>
+          <div class="home-location1">
+            <span class="home-caption1">Let's talk through</span>
+            <span class="home-value1">sayhello@egarage.in</span>
+            <span class="home-value1">+91 9999912345</span>
+          </div>
+        </div>
+      </div>
+      <img
+        alt="image"
+        src="https://images.unsplash.com/photo-1570071677470-c04398af73ca?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDN8fGdhcmFnZXxlbnwwfHx8fDE3MDg2NDM2Nzh8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+        class="home-image1"
+      />
+    </footer>
+  </div>
+</div>
+<a href="{{ url_for('enterprise') }}"
+      ><img alt="image" src="static/logo_new.jpg" class="home-logo4"
+    /></a>
+<!-- Footer -->
+<div class="footer">
+  <p class="footer-description">
+    <b>
+      Made by Kartik Gupta, Nitin Goyal, Shashwat Singh Chauhan with
+      &#10084;</b
+    >
+  </p>
+</div>
+	</body>
+</html>

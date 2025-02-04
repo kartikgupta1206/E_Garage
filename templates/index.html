@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>E-GARAGE PORTAL</title>
+    <meta property="og:title" content="Agency modern template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/x-icon" href="static/logo_new.jpg" />
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      .home-logo4 {
+        position: fixed;
+        display: flex;
+        height: 60px;
+        width: 60px;
+        z-index: 10;
+        bottom: 5px;
+        right: 5px;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Noto Sans;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/mainpagestyle.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="static\mainpagestyle.css" />
+    <div>
+      <link href="static\mainpage.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div class="home-navbar">
+          <header data-thq="thq-navbar" class="home-navbar-interactive">
+            <div class="home-branding">
+              <a href="{{ url_for('index') }}"
+                ><img alt="image" src="static/logo_new.jpg" class="home-logo"
+              /></a>
+              <a href="{{ url_for('index') }}"
+                ><span class="home-company">E-Garage</span></a
+              >
+            </div>
+            <div class="home-items">
+              <div class="home-links">
+                <a href="{{ url_for('index') }}">
+                  <span class="nav-link">Home</span></a
+                >
+                <a href="{{ url_for('maintenance') }}"
+                  ><span class="nav-link">Maintenance Prediciton</span></a
+                >
+                <a href="{{ url_for('car_price') }}"
+                  ><span class="nav-link">Price Predicition</span></a
+                >
+                <a href="{{ url_for('error') }}">
+                  <span class="nav-link">Fuel Effeciency Check</span></a
+                >
+                <a href="{{ url_for('login') }}">
+                  <span class="nav-link">Login</span></a
+                >
+              </div>
+            </div>
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <button class="home-button button">
+                <img
+                  alt="image"
+                  src="static/hamburger.svg"
+                  class="home-image"
+                />
+                <span class="home-text03">Start a project</span>
+              </button>
+            </div>
+            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+              <div
+                data-thq="thq-mobile-menu-nav"
+                data-role="Nav"
+                class="home-nav"
+              >
+                <div class="home-top">
+                  <div class="home-branding1">
+                    <img alt="image" src="static/logo.svg" class="home-logo1" />
+                    <span class="home-company1">SPYRL</span>
+                  </div>
+                  <div data-thq="thq-close-menu" class="home-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="home-icon">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="home-items1">
+                  <div class="home-links1">
+                    <span class="nav-link">Work</span>
+                    <span class="nav-link">Services</span>
+                    <span class="nav-link">About</span>
+                    <span class="nav-link">Contact</span>
+                  </div>
+                  <button class="start-button button home-button1">
+                    <span class="home-text08">Start a project</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+        <video
+          src="static/Final- Made with Clipchamp (1).mp4"
+          loop="true"
+          muted="true"
+          poster="static/video-preview-1500w.png"
+          preload="auto"
+          autoplay="true"
+          playsinline="true"
+          class="home-video"
+        ></video>
+        <header class="home-hero">
+          <div class="home-header">
+            <h1 class="home-title">Be the change you wanna see</h1>
+            <p class="home-description">
+              "Revitalize Your Ride with Our Expert Services".
+            </p>
+          </div>
+        </header>
+        <div class="home-video1"></div>
+        <div class="home-description1">
+          <div class="home-content">
+            <div class="home-text09">
+              <p class="home-paragraph">
+                We are a team of Three students who are ready to develop best in
+                car services solution which encompasses all the different
+                services available in the Market.
+              </p>
+              <p class="home-paragraph1">
+                We employ the use of High Quality Ml and XAI models which
+                adjudges the result on the basis of your car attributes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="home-featured">
+          <div class="home-header1">
+            <h2 class="heading">services&nbsp;</h2>
+            <div class="home-link"></div>
+          </div>
+          <div class="home-list">
+            <div class="work-work">
+              <img
+                alt="image"
+                src="static/unsplash-image-1500w.jpeg"
+                class="work-image"
+              />
+              <div class="work-details">
+                <div class="work-header">
+                  <div class="work-heading">
+                    <span class="work-text">
+                      <span>MAINTENANCE PREDICTION</span>
+                    </span>
+                  </div>
+                  <span class="work-text1">
+                    <span>
+                      We provide the best in class at ur disposal where you can
+                      adjudge whether your car requires maintenance or not. </span
+                    ><br /><br /><br /><br />
+                    <a href="{{ url_for('maintenance') }}"
+                      ><button class="button">
+                        <span>Click here to visit </span>
+                      </button></a
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="work-work">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE1fHxjYXJ8ZW58MHx8fHwxNzA4NjA3MjYyfDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="work-image"
+              />
+              <div class="work-details">
+                <div class="work-header">
+                  <div class="work-heading">
+                    <span class="work-text"><span>PRICE PREDICTION</span></span>
+                  </div>
+                  <span class="work-text1">
+                    <span>
+                      Best In class solution services to calculate the
+                      compensation of your used car in the current market
+                      scenario on the attributes of your car.
+                    </span>
+                    <br /><br /><br /><br />
+                    <a href="{{ url_for('car_price') }}"
+                      ><button class="button">
+                        <span>Click here to visit </span>
+                      </button></a
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="work-work">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1498887960847-2a5e46312788?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE5fHxjYXJ8ZW58MHx8fHwxNzA4NjA3MjYyfDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                class="work-image"
+              />
+              <div class="work-details">
+                <div class="work-header">
+                  <div class="work-heading">
+                    <span class="work-text">
+                      <span>Fuel Efficiency and Price Prediction</span>
+                    </span>
+                  </div>
+                  <span class="work-text1">
+                    <span>
+                      We can employ the use of fuel efficiency check services
+                      and calculate the fuel price that your car will cost based
+                      on its attributes.
+                    </span>
+                    <br /><br /><br /><br />
+                    <a href="{{ url_for('error') }}"
+                      ><button class="button">
+                        <span>Click here to visit </span>
+                      </button></a
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-services">
+          <div class="home-header2">
+            <h2 class="heading">WHAT MAKES US DIFFERENT?</h2>
+          </div>
+          <div class="home-grid">
+            <div class="service-service service-root-class-name">
+              <h3 class="service-title"><span>ML Models</span></h3>
+              <span class="service-description">
+                <span>
+                  Provides the best in class models and different ml models and
+                  techniques which are different from the techniques employed by
+                  various organisations, research papers.
+                </span>
+              </span>
+            </div>
+            <div class="service-service service-root-class-name1">
+              <h3 class="service-title"><span>All In One Services</span></h3>
+              <span class="service-description">
+                <span>
+                  Provides all in one services which totally encompassed by a
+                  single organisation.
+                </span>
+              </span>
+            </div>
+            <div class="service-service service-root-class-name5">
+              <h3 class="service-title"><span>In depth Knowledge</span></h3>
+              <span class="service-description">
+                <span>
+                  In depth knowledge based on various research papers and trying
+                  to complete the various goals that hav yet not been achieved
+                  in various research papers.
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <footer class="home-footer">
+          <div class="home-information">
+            <div class="home-details">
+              <div class="home-header3">
+                <div class="home-branding2">
+                  <span class="home-company2">E-Garage</span>
+                </div>
+                <div class="home-location">
+                  <span class="home-caption">Office</span>
+                  <span class="home-value">
+                    Jaypee Institute Of Information Technology,Sector 128
+                  </span>
+                </div>
+              </div>
+              <div class="home-location1">
+                <span class="home-caption1">Let's talk through</span>
+                <span class="home-value1">sayhello@egarage.in</span>
+                <span class="home-value1">+91 9999912345</span>
+              </div>
+            </div>
+          </div>
+          <img
+            alt="image"
+            src="https://images.unsplash.com/photo-1570071677470-c04398af73ca?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDN8fGdhcmFnZXxlbnwwfHx8fDE3MDg2NDM2Nzh8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+            class="home-image1"
+          />
+        </footer>
+      </div>
+    </div>
+    <a href="{{ url_for('enterprise') }}"
+      ><img alt="image" src="static/logo_new.jpg" class="home-logo4"
+    /></a>
+    <!-- Footer -->
+    <div class="footer">
+      <p class="footer-description">
+        <b>
+          Made by Kartik Gupta, Nitin Goyal, Shashwat Singh Chauhan with
+          &#10084;</b
+        >
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>E-GARAGE PORTAL</title>
+    <meta property="og:title" content="Agency modern template" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="static/logo_new.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      .home-logo4 {
+        position: fixed;
+        display: flex;
+        height: 60px;
+        width: 60px;
+        z-index: 10;
+        bottom: 5px;
+        right: 5px;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Noto Sans;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/maintenanceyesornostyle.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="static\mainpagestyle.css" />
+    <div>
+      <link href="static\mainpage.css" rel="stylesheet" />
+    <link rel="stylesheet" href="static/maintenanceyesornostyle.css" />
+    <div>
+      <link href="static/maintenanceyesorno.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div class="home-navbar">
+          <header data-thq="thq-navbar" class="home-navbar-interactive">
+            <div class="home-branding">
+              <a href="{{ url_for('index') }}"
+                ><img alt="image" src="static/logo_new.jpg" class="home-logo"
+              /></a>
+              <a href="{{ url_for('index') }}"
+                ><span class="home-company">E-Garage</span></a
+              >
+            </div>
+            <div class="home-items">
+              <div class="home-links">
+                <a href="{{ url_for('index') }}">
+                  <span class="nav-link">Home</span></a
+                >
+                <a href="{{ url_for('maintenance') }}"
+                  ><span class="nav-link">Maintenance Prediciton</span></a
+                >
+                <a href="{{ url_for('car_price') }}"
+                  ><span class="nav-link">Price Predicition</span></a
+                >
+                <a href="{{ url_for('error') }}">
+                  <span class="nav-link">Fuel Effeciency Check</span></a
+                >
+                <a href="{{ url_for('login') }}">
+                  <span class="nav-link">Login</span></a
+                >
+              </div>
+            </div>
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <button class="home-button button">
+                <img
+                  alt="image"
+                  src="static/hamburger.svg"
+                  class="home-image"
+                />
+                <span class="home-text2">Start a project</span>
+              </button>
+            </div>
+            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+              <div
+                data-thq="thq-mobile-menu-nav"
+                data-role="Nav"
+                class="home-nav"
+              >
+                <div class="home-top">
+                  <div class="home-branding1">
+                    <img
+                      alt="image"
+                      src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
+                      class="home-logo1"
+                    />
+                    <span class="home-company1">SPYRL</span>
+                  </div>
+                  <div data-thq="thq-close-menu" class="home-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="home-icon">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="home-items1">
+                  <div class="home-links1">
+                    <span class="nav-link">Work</span>
+                    <span class="nav-link">Services</span>
+                    <span class="nav-link">About</span>
+                    <span class="nav-link">Contact</span>
+                  </div>
+                  <button class="start-button button home-button1">
+                    <span class="home-text7">Start a project</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+        <br><br><br>
+        <video
+        src="static/final%20-%20made%20with%20clipchamp.mp4"
+        loop="true"
+        muted="true"
+        poster="static/video-preview-1500w.png"
+        preload="auto"
+        autoplay="true"
+        playsinline="true"
+        class="home-video"
+        ></video>
+        <header class="home-hero">
+          <div class="home-header">
+            <h1 class="home-title">BE the change you wanna see</h1>
+            <p class="home-description">
+              "Revitalize Your Ride with Our Expert Services".
+            </p>
+          </div>
+        </header>
+        <div class="home-featured">
+          <div class="home-container1">
+            <div class="home-container2">
+              <style>
+                body {
+                  background-image: url("background-image.jpg"); /* Replace 'background-image.jpg' with the path to your background image */
+                  background-size: cover;
+                  font-family: Arial, sans-serif;
+                }
+                .container {
+                  max-width: 400px;
+                  margin: 50px auto;
+                  padding: 20px;
+                  background: rgba(0, 0, 0, 0.6); /* black color */
+                  border-radius: 10px;
+                  color: #fff; /* white text color */
+                }
+                .form-group {
+                  margin-bottom: 20px;
+                }
+                label {
+                  display: block;
+                  margin-bottom: 5px;
+                  color: #fff; /* white text color */
+                }
+                input[type="text"],
+                input[type="number"],
+                select {
+                  width: 100%;
+                  padding: 10px;
+                  border: 1px solid #fff; /* white border */
+                  border-radius: 5px;
+                  box-sizing: border-box;
+                  background-color: rgba(
+                    255,
+                    255,
+                    255,
+                    0.2
+                  ); /* slightly transparent white background */
+                  color: #000; /* black text color */
+                  margin-top: 5px;
+                }
+                input[type="submit"] {
+                  width: 100%;
+                  padding: 10px;
+                  border: none;
+                  border-radius: 5px;
+                  background-color: #4caf50; /* green color */
+                  color: white;
+                  cursor: pointer;
+                }
+                input[type="submit"]:hover {
+                  background-color: #45a049; /* darker green color on hover */
+                }
+                .placeholder{
+                  color:#white;
+                }
+              </style>
+
+              <div class="container">
+                <h2 style="text-align: center">Car Maintenance Details Form</h2>
+                <a href="{{ url_for('maintenance') }}">
+                  <center><button class="button"><span>Switch </span></button></center></a>
+                  <form id ='carform' action="{{ url_for('mainpredictyes')}}" method="POST"> 
+                  
+                  <div class="form-group">
+                    <label for="model">Car's Model Name:</label>
+                    <input
+                      type="text"
+                      id="model"
+                      name="model"
+                      placeholder="Enter the car"
+                      s=""
+                      model&#x27;=""
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="year">Year of Purchase:</label>
+                    <input
+                      type="number"
+                      id="year"
+                      name="year"
+                      placeholder="Enter the year"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="engineOil">Engine Oil:</label>
+                    <select id="engineOil" name="engineOil" required="">
+                      <option value="1">Yes</option>
+                      <option value="0">No</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="kilometers">Kilometers Driven till now:</label>
+                    <input
+                      type="number"
+                      id="kilometers"
+                      name="kilometers"
+                      placeholder="Enter total kilometers driven"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="breakPad">Break Pad:</label>
+                    <select
+                      id="breakPad"
+                      name="breakPad"
+                      required=""
+                    >
+                      <option value="1">Yes</option>
+                      <option value="0">No</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="transmissionFuel">
+                      Transmission Fuel:
+                    </label>
+                    <select
+                      id="transmissionFuel"
+                      name="transmissionFuel"
+                      required=""
+                    >
+                      <option value="1">Yes</option>
+                      <option value="0">No</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="sparkPlug">Spark Plug :</label>
+                    <select
+                      id="sparkPlug"
+                      name="sparkPlug"
+                      required=""
+                    >
+                      <option value="1">Yes</option>
+                      <option value="0">No</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="tireRotation">Tire Rotations:</label>
+                    <select
+                      id="tireRotation"
+                      name="tireRotation"
+                      required=""
+                    >
+                      <option value="1">Yes</option>
+                      <option value="0">No</option>
+                    </select>
+                  </div>
+                  <input type="submit" value="Submit" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="home-services">
+          <div class="home-header2">
+            <h2 class="heading">WHAT MAKES US DIFFERENT?</h2>
+          </div>
+          <div class="home-grid">
+            <div class="service-service service-root-class-name">
+              <h3 class="service-title"><span>ML Models</span></h3>
+              <span class="service-description">
+                <span>
+                  Provides the best in class models and different ml models and
+                  techniques which are different from the techniques employed by
+                  various organisations, research papers.
+                </span>
+              </span>
+            </div>
+            <div class="service-service service-root-class-name1">
+              <h3 class="service-title"><span>All In One Services</span></h3>
+              <span class="service-description">
+                <span>
+                  Provides all in one services which totally encompassed by a
+                  single organisation.
+                </span>
+              </span>
+            </div>
+            <div class="service-service service-root-class-name5">
+              <h3 class="service-title"><span>In depth Knowledge</span></h3>
+              <span class="service-description">
+                <span>
+                  In depth knowledge based on various research papers and trying
+                  to complete the various goals that hav yet not been achieved
+                  in various research papers.
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <footer class="home-footer">
+          <div class="home-information">
+            <div class="home-details">
+              <div class="home-header3">
+                <div class="home-branding2">
+                  <span class="home-company2">E-Garage</span>
+                </div>
+                <div class="home-location">
+                  <span class="home-caption">Office</span>
+                  <span class="home-value">
+                    Jaypee Institute Of Information Technology,Sector 128
+                  </span>
+                </div>
+              </div>
+              <div class="home-location1">
+                <span class="home-caption1">Let's talk through</span>
+                <span class="home-value1">sayhello@egarage.in</span>
+                <span class="home-value1">+91 9999912345</span>
+              </div>
+            </div>
+          </div>
+          <img
+            alt="image"
+            src="https://images.unsplash.com/photo-1570071677470-c04398af73ca?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDN8fGdhcmFnZXxlbnwwfHx8fDE3MDg2NDM2Nzh8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+            class="home-image1"
+          />
+        </footer>
+      </div>
+    </div>
+    <a href="{{ url_for('enterprise') }}"
+      ><img alt="image" src="static/logo_new.jpg" class="home-logo4"
+    /></a>
+    <!-- Footer -->
+    <div class="footer">
+      <p class="footer-description">
+        <b>
+          Made by Kartik Gupta, Nitin Goyal, Shashwat Singh Chauhan with
+          &#10084;</b
+        >
+      </p>
+    </div>
+  </body>
+</html>
